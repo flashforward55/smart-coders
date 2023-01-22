@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: local(''),
+    url('../fonts/montserrat-bold.woff2') format('woff2'),
+    url('../fonts/montserrat-bold.woff') format('woff'),
+    url('../fonts/montserrat-bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local(''),
+    url('../fonts/montserrat-semibold.woff2') format('woff2'),
+    url('../fonts/montserrat-semibold.woff') format('woff'),
+    url('../fonts/montserrat-semibold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local(''),
+    url('../fonts/montserrat-medium.woff2') format('woff2'),
+    url('../fonts/montserrat-medium.woff') format('woff'),
+    url('../fonts/montserrat-medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local(''),
+    url('../fonts/montserrat-regular.woff2') format('woff2'),
+    url('../fonts/montserrat-regular.woff') format('woff'),
+    url('../fonts/montserrat-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local(''),
+    url('../fonts/montserrat-light.woff2') format('woff2'),
+    url('../fonts/montserrat-light.woff') format('woff'),
+    url('../fonts/montserrat-light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Film P3';
+  src: local(''),
+    url('../fonts/film-p3-bold.woff2') format('woff2'),
+    url('../fonts/film-p3-bold.woff') format('woff'),
+    url('../fonts/film-p3-bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Times New Roman';
+  src: local(''),
+    url('../fonts/times-new-roman-bold.woff2') format('woff2'),
+    url('../fonts/times-new-roman-bold.woff') format('woff'),
+    url('../fonts/times-new-roman-bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Times New Roman';
+  src: local(''),
+    url('../fonts/times-new-roman-regular.woff2') format('woff2'),
+    url('../fonts/times-new-roman-regular.woff') format('woff'),
+    url('../fonts/times-new-roman-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
