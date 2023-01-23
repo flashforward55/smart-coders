@@ -141,6 +141,122 @@ button {
   text-transform: uppercase;
 }
 
+/* Mixins */ /* Button */
+.btn {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: transparent;
+}
+
+.btn-modal-open {
+  width: 236px;
+  height: 48px;
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+  background-color: #000000;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #F3C653;
+  transition-property: background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-modal-open:hover, .btn-modal-open:focus {
+  border-color: #F3C653;
+  background-color: #FFFFFF;
+}
+
+.btn-modal-open--transparent {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  width: 236px;
+  height: 48px;
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+  background-color: #000000;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #F3C653;
+  transition-property: background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-link:hover, .btn-link:focus {
+  border-color: #F3C653;
+  background-color: #FFFFFF;
+}
+
+.btn-link--transparent {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn-roompage-modal-open {
+  width: 434px;
+  height: 64px;
+  border: 1px solid #F3C653;
+  border-radius: 25px;
+  background-color: #000000;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2083333333;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-roompage-modal-open:hover, .btn-roompage-modal-open:focus {
+  color: #000000;
+  background-color: #F3C653;
+}
+@media screen and (max-width: 1023.99px) {
+  .btn-roompage-modal-open {
+    width: 384px;
+  }
+}
+
+.btn-modal-submit {
+  width: 592px;
+  height: 64px;
+  border: 1px solid #F3C653;
+  background-color: #000000;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2083333333;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-modal-submit:hover, .btn-modal-submit:focus {
+  color: #000000;
+  background-color: #F3C653;
+}
+@media screen and (max-width: 1023.99px) {
+  .btn-modal-submit {
+    width: 384px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
 .header {
   position: absolute;
   z-index: 10;
@@ -322,4 +438,221 @@ button {
 /* main.html он же index.html */
 /* restaurant.html */
 /* hotel.html */
-/* room.html *//*# sourceMappingURL=index.css.map */
+/* room.html */
+.room-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 414px) {
+  .room-container {
+    max-width: 414px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .room-container {
+    max-width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .room-container {
+    max-width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+
+.room-amenities {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .room-amenities {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .room-amenities {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+.room-title {
+  margin-bottom: 16px;
+  color: #000000;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.15;
+}
+
+.room-description {
+  margin-bottom: 32px;
+  color: #7A7A7A;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+@media screen and (min-width: 1024px) {
+  .room-description {
+    width: 757px;
+  }
+}
+
+.amenities {
+  padding-left: 0;
+  margin: 0;
+}
+
+.category {
+  list-style: none;
+}
+
+.category-title {
+  margin-bottom: 16px;
+  color: #000000;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+}
+
+.category-diteils {
+  margin-bottom: 16px;
+  color: #7A7A7A;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+.category-diteils:last-child {
+  margin-right: 0;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .category-diteils {
+    width: 400px;
+    margin-bottom: 0;
+  }
+}
+
+.category-nicety {
+  margin-bottom: 16px;
+  color: #7A7A7A;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+.category-nicety:last-child {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .category-nicety {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .thumb {
+    display: flex;
+    gap: 80px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .thumb {
+    gap: 159px;
+  }
+}
+
+.addinfo-booking {
+  list-style: none;
+}
+@media screen and (min-width: 1024px) {
+  .addinfo-booking {
+    margin-left: 494px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .addinfo-booking {
+    margin-left: 563px;
+  }
+}
+
+.booking-button {
+  padding: 18px 38px;
+  margin-bottom: 32px;
+  min-width: 384px;
+  color: #FFFFFF;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  background-color: #000000;
+  border: 1px solid #F3C653;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.booking-button:hover, .booking-button:focus {
+  color: #000000;
+  background-color: #F3C653;
+}
+@media screen and (min-width: 1024px) {
+  .booking-button {
+    min-width: 434px;
+    font-size: 24px;
+  }
+}
+
+.link {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #C79002;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:hover, .link:focus {
+  color: #F3C653;
+}
+@media screen and (min-width: 1024px) {
+  .link {
+    gap: 16px;
+    font-size: 20px;
+    line-height: 1.2;
+    justify-content: flex-start;
+  }
+}
+
+.link-icon {
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  fill: currentColor;
+}
+.link-icon__icon:hover, .link-icon__icon:focus {
+  color: #F3C653;
+}/*# sourceMappingURL=index.css.map */
