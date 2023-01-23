@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* General */
 @font-face {
   font-family: "Montserrat";
   src: local(""), url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff"), url("../fonts/montserrat-bold.ttf") format("truetype");
@@ -126,4 +127,9 @@ button {
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   margin: -1px;
-}/*# sourceMappingURL=index.css.map */
+}
+
+/* main.html он же index.html */
+/* restaurant.html */
+/* hotel.html */
+/* room.html *//*# sourceMappingURL=index.css.map */
