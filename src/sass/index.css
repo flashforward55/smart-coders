@@ -164,7 +164,7 @@ button {
 }
 .header__logo {
   text-decoration: none;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 30px;
   line-height: 1.08;
   font-weight: 700;
@@ -231,7 +231,7 @@ button {
 .contacts-list__title {
   font-family: "Montserrat", "sans-serif";
   font-style: normal;
-  color: #f3c653;
+  color: #F3C653;
   font-size: 14px;
   line-height: 1.29;
   font-weight: 500;
@@ -271,7 +271,7 @@ button {
 .contacts-list__icon {
   width: 10px;
   height: 16px;
-  fill: #f3c653;
+  fill: #F3C653;
 }
 @media screen and (min-width: 414px) {
   .contacts-list__icon {
@@ -287,7 +287,7 @@ button {
   line-height: 1.21;
   font-weight: 400;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 @media screen and (min-width: 1024px) {
   .contacts-list__phone-number {
@@ -316,7 +316,7 @@ button {
   transition: transform transition-duration transition-timing-function;
 }
 .header-soc-list__icon:hover, .header-soc-list__icon:focus {
-  fill: #f3c653;
+  fill: #F3C653;
 }
 
 /* main.html он же index.html */
