@@ -1,13 +1,20 @@
 body {
-    color: $gray-text-color;
-    background-color: $bg-lemon-color;
-    font-family: 'Montserrat', sans-serif;
+  color: $gray-text-color;
+  background-color: $bg-lemon-color;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Глобальне скидання стилів по тегам*/
-h1, h2, h3, h4, h5, h6, p, ul {
-    padding: 0;
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 img {
@@ -30,49 +37,49 @@ img {
 }
 
 a {
-    display: inline-block;
+  display: inline-block;
 }
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 button {
-    border: 0;
+  border: 0;
 }
 
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 
-    @media screen and (min-width: 414px) {
-       max-width: 414px; 
-    }
+  @media screen and (min-width: 414px) {
+    max-width: 414px;
+  }
 
-    @media screen and (min-width: 1024px) {
-       max-width: 1024px; 
-       padding-left: 47px;
-       padding-right: 47px;
-    }
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
 
-    @media screen and (min-width: 1280px) {
-       max-width: 1280px;
-       padding-left: 85px;
-       padding-right: 85px; 
-    }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
 }
 
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
