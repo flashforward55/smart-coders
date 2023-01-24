@@ -1,0 +1,133 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 15px;
+
+    color: $accent-yellow-color;
+    background-color: $footer-color;
+
+    &__logo{
+        font-family: "Film P3";
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.08;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+
+        max-width: 127px;
+    }
+
+    &__nav{
+        margin-bottom: 32px;
+    }
+    
+    &__item:not(:last-child){
+        margin-bottom: 16px;
+    }
+
+    &__link{
+        transition: color 250ms $cubic-bezier;
+        &:focus,
+        &:hover{
+            color: $white-color;
+        
+        }
+    }
+
+    @media screen and(min-width: 1024px) {
+        padding: 80px 0;
+        &__logo{
+            font-size: 64px;
+
+            max-width: 202px;
+        }
+        &__list{
+            display: flex;
+        }
+
+        &__nav{
+            margin-right: 137px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.social{
+    display: flex;
+    
+    
+    
+    &__link{ 
+        fill: rgba(243, 198, 83, 0.7);;
+        transition: color 250ms $cubic-bezier, fill 250ms $cubic-bezier, border-color 250ms $cubic-bezier;
+
+        &:focus,
+        &:hover{
+            fill: $white-color;
+            color: $white-color;
+            border-color: $white-color;
+        }
+    }
+
+
+    @media screen and (max-width:1023px){
+
+&__item:not(:last-child){
+        margin-right: 20px;
+    }
+     &__span{
+    display: none;
+    } 
+    }
+
+    @media screen and(min-width: 1024px){
+    display: flex;
+    
+    flex-direction: column-reverse;
+    justify-content: center;
+
+    &__link{ 
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            width: 144px;
+            height: 40px;
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+
+            border: 0.5px solid $accent-yellow-color;
+            border-radius: 2px;
+           
+           
+        }
+        &__item{
+           align-items: center;
+
+        }
+        &__item:not(:first-child){
+            margin-bottom: 12px;
+        }
+    
+
+}
+        
+
+
+}
+
+
+
+
+
+
