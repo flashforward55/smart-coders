@@ -1,0 +1,134 @@
+/* Button */
+
+//  Базові стилі
+.btn {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: transparent;
+}
+
+// Кнопки, що відкривають модальні вікна
+.btn-modal-open {
+  width: 236px;
+  height: 48px;
+
+  border: 2px solid $white-color;
+  border-radius: 25px;
+  background-color: $black-color;
+
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: $accent-yellow-color;
+
+  @include transition(background-color, border-color);
+
+  &:hover,
+  &:focus {
+    border-color: $accent-yellow-color;
+    background-color: $white-color;
+  }
+}
+
+// Кнопки, що відкривають модальні вікна напівпрозорі
+.btn-modal-open--transparent {
+  background-color: $bg-btn-transparent;
+}
+
+// Кнопки-посилання
+.btn-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  width: 236px;
+  height: 48px;
+  border: 2px solid $white-color;
+  border-radius: 25px;
+  background-color: $black-color;
+
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: $accent-yellow-color;
+
+  @include transition(background-color, border-color);
+
+  &:hover,
+  &:focus {
+    border-color: $accent-yellow-color;
+    background-color: $white-color;
+  }
+}
+
+// Кнопки-посилання напівпрозорі
+.btn-link--transparent {
+  background-color: $bg-btn-transparent;
+}
+
+// Кнопка, що відкриває модальне вікно для сторінки ROOM PAGE
+.btn-roompage-modal-open {
+  width: 434px;
+  height: 64px;
+
+  border: 1px solid $accent-yellow-color;
+  border-radius: 25px;
+  background-color: $black-color;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(29 / 24);
+  text-transform: uppercase;
+  color: $white-color;
+
+  @include transition(background-color, color);
+
+  &:hover,
+  &:focus {
+    color: $black-color;
+    background-color: $accent-yellow-color;
+  }
+
+  // mobile
+  @media screen and (max-width: 1023.99px) {
+    width: 384px;
+  }
+}
+
+// Кнопки, що закривають модальні вікна
+.btn-modal-submit {
+  width: 592px;
+  height: 64px;
+
+  border: 1px solid $accent-yellow-color;
+  background-color: $black-color;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(29 / 24);
+  text-transform: uppercase;
+  color: $white-color;
+
+  @include transition(background-color, color);
+
+  &:hover,
+  &:focus {
+    color: $black-color;
+    background-color: $accent-yellow-color;
+  }
+
+  // mobile
+  @media screen and (max-width: 1023.99px) {
+    width: 384px;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+}
