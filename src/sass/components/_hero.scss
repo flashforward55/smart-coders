@@ -435,7 +435,7 @@
   border: 2px solid #ffffff;
   border-radius: 25px;
 
-  transform: background-color;
+  transform: background-color, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform, transition-duration, transition-timing-function;
@@ -443,6 +443,7 @@
   &:hover,
   &:focus {
     background-color: #ffffff;
+    border-color: #f3c653;
   }
 }
 
@@ -462,7 +463,7 @@
   border: 2px solid #ffffff;
   border-radius: 25px;
 
-  transition-property: background-color;
+  transition-property: background-color, border-color;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -471,5 +472,6 @@
   &:hover,
   &:focus {
     background-color: #ffffff;
+    border-color: #f3c653;
   }
 }
