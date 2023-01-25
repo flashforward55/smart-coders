@@ -225,7 +225,7 @@
 
   &__soc-wrap {
     position: absolute;
-    top: 515px;
+    top: 510px;
 
     @media screen and (min-width: 1024px) {
       top: 493px;
@@ -415,63 +415,17 @@
   }
 }
 
-.btn-hr {
-  display: block;
-  font-family: inherit;
-  cursor: pointer;
+.btn-modal-open-mobile {
 
-  min-width: 236px;
-  height: 48px;
-
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-
-  color: #f3c653;
-
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-
-  transform: background-color, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform, transition-duration, transition-timing-function;
-
-  &:hover,
-  &:focus {
-    background-color: #ffffff;
-    border-color: #f3c653;
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 24px;
   }
 }
 
-.link-light-btn {
+.btn-link-mobile {
 
-  padding: 12px 30px;
-
-  font-style: normal;
-  // @include font(16px, 1.25, 700, 0.02em);
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-
-  color: #f3c653;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-
-  transition-property: background-color, border-color;
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transition-property, transition-duration, transition-timing-function;
-
-  &:hover,
-  &:focus {
-    background-color: #ffffff;
-    border-color: #f3c653;
+  @media screen and (max-width: 1024px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
