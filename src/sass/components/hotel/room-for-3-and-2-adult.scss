@@ -2,12 +2,18 @@
 .rooms {
   padding-top: 32px;
   padding-bottom: 32px;
+
   &--triple {
     background-color: $bg-dark-lemon-color;
   }
 
   &--double {
     background-color: $bg-lemon-color;
+  }
+
+  // mobile
+  @media screen and (max-width: 1023px) {
+    overflow: hidden;
   }
 
   // tablet
@@ -48,11 +54,6 @@
 }
 
 .rooms__text-wrapper {
-  // 320px
-  @media screen and (max-width: 353px) {
-    padding-left: 48px;
-  }
-
   // mobile
   @media screen and (max-width: 1023px) {
     padding-left: 82px;
@@ -232,12 +233,8 @@
   }
 }
 
-.rooms__slider {
-  // mobile
-  @media screen and (max-width: 1023px) {
-    overflow: hidden;
-  }
-}
+// .rooms__slider {
+// }
 
 .rooms__slider-list {
   display: flex;
@@ -249,10 +246,13 @@
     position: absolute;
     z-index: 10;
     top: -214px;
-    left: -135px;
+
+    &--double {
+      left: -135px;
+    }
 
     &--triple {
-      left: 115px;
+      right: -135px;
     }
   }
 
