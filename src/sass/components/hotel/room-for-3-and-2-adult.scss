@@ -5,6 +5,7 @@
   &--triple {
     background-color: $bg-dark-lemon-color;
   }
+
   &--double {
     background-color: $bg-lemon-color;
   }
@@ -24,10 +25,6 @@
 
 .rooms__container {
   position: relative;
-
-  @media screen and (max-width: 1023px) {
-    overflow: hidden;
-  }
 
   // tablet
   @media screen and (min-width: 1024px) {
@@ -252,7 +249,7 @@
     position: absolute;
     z-index: 10;
     top: -214px;
-    right: 115px;
+    left: -135px;
 
     &--triple {
       left: 115px;

@@ -1,66 +1,50 @@
 @charset "UTF-8";
 /* General */
 @font-face {
-  font-family: 'Montserrat';
-  src: local(''), url('../fonts/montserrat-bold.woff2') format('woff2'),
-    url('../fonts/montserrat-bold.woff') format('woff'),
-    url('../fonts/montserrat-bold.ttf') format('truetype');
+  font-family: "Montserrat";
+  src: local(""), url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff"), url("../fonts/montserrat-bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
-  font-family: 'Montserrat';
-  src: local(''), url('../fonts/montserrat-semibold.woff2') format('woff2'),
-    url('../fonts/montserrat-semibold.woff') format('woff'),
-    url('../fonts/montserrat-semibold.ttf') format('truetype');
+  font-family: "Montserrat";
+  src: local(""), url("../fonts/montserrat-semibold.woff2") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff"), url("../fonts/montserrat-semibold.ttf") format("truetype");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
-  font-family: 'Montserrat';
-  src: local(''), url('../fonts/montserrat-medium.woff2') format('woff2'),
-    url('../fonts/montserrat-medium.woff') format('woff'),
-    url('../fonts/montserrat-medium.ttf') format('truetype');
+  font-family: "Montserrat";
+  src: local(""), url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff"), url("../fonts/montserrat-medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
-  font-family: 'Montserrat';
-  src: local(''), url('../fonts/montserrat-regular.woff2') format('woff2'),
-    url('../fonts/montserrat-regular.woff') format('woff'),
-    url('../fonts/montserrat-regular.ttf') format('truetype');
+  font-family: "Montserrat";
+  src: local(""), url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff"), url("../fonts/montserrat-regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
-  font-family: 'Montserrat';
-  src: local(''), url('../fonts/montserrat-light.woff2') format('woff2'),
-    url('../fonts/montserrat-light.woff') format('woff'),
-    url('../fonts/montserrat-light.ttf') format('truetype');
+  font-family: "Montserrat";
+  src: local(""), url("../fonts/montserrat-light.woff2") format("woff2"), url("../fonts/montserrat-light.woff") format("woff"), url("../fonts/montserrat-light.ttf") format("truetype");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
-  font-family: 'Film P3';
-  src: local(''), url('../fonts/film-p3-bold.woff2') format('woff2'),
-    url('../fonts/film-p3-bold.woff') format('woff'),
-    url('../fonts/film-p3-bold.ttf') format('truetype');
+  font-family: "Film P3";
+  src: local(""), url("../fonts/film-p3-bold.woff2") format("woff2"), url("../fonts/film-p3-bold.woff") format("woff"), url("../fonts/film-p3-bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
-  font-family: 'Times New Roman';
-  src: local(''), url('../fonts/times-new-roman-bold.woff2') format('woff2'),
-    url('../fonts/times-new-roman-bold.woff') format('woff'),
-    url('../fonts/times-new-roman-bold.ttf') format('truetype');
+  font-family: "Times New Roman";
+  src: local(""), url("../fonts/times-new-roman-bold.woff2") format("woff2"), url("../fonts/times-new-roman-bold.woff") format("woff"), url("../fonts/times-new-roman-bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
-  font-family: 'Times New Roman';
-  src: local(''), url('../fonts/times-new-roman-regular.woff2') format('woff2'),
-    url('../fonts/times-new-roman-regular.woff') format('woff'),
-    url('../fonts/times-new-roman-regular.ttf') format('truetype');
+  font-family: "Times New Roman";
+  src: local(""), url("../fonts/times-new-roman-regular.woff2") format("woff2"), url("../fonts/times-new-roman-regular.woff") format("woff"), url("../fonts/times-new-roman-regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
@@ -71,7 +55,7 @@ html {
 body {
   color: #7a7a7a;
   background-color: #fffdee;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Глобальне скидання стилів по тегам*/
@@ -158,12 +142,12 @@ td {
   padding: 0;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
+          clip-path: inset(50%);
   margin: -1px;
 }
 
 .logo {
-  font-family: 'Film P3', 'sans-serif';
+  font-family: "Film P3", "sans-serif";
   text-transform: uppercase;
 }
 
@@ -177,12 +161,12 @@ td {
 }
 
 .btn-modal-open {
-  width: 236px;
+  min-width: 236px;
   height: 48px;
   border: 2px solid #ffffff;
   border-radius: 25px;
   background-color: #000000;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -192,8 +176,7 @@ td {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-modal-open:hover,
-.btn-modal-open:focus {
+.btn-modal-open:hover, .btn-modal-open:focus {
   border-color: #f3c653;
   background-color: #ffffff;
 }
@@ -203,12 +186,12 @@ td {
 }
 
 .btn-roompage-modal-open {
-  width: 434px;
+  min-width: 434px;
   height: 64px;
   border: 1px solid #f3c653;
   border-radius: 25px;
   background-color: #000000;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 24px;
   line-height: 1.2083333333;
@@ -218,23 +201,22 @@ td {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-roompage-modal-open:hover,
-.btn-roompage-modal-open:focus {
+.btn-roompage-modal-open:hover, .btn-roompage-modal-open:focus {
   color: #000000;
   background-color: #f3c653;
 }
 @media screen and (max-width: 1023.99px) {
   .btn-roompage-modal-open {
-    width: 384px;
+    min-width: 384px;
   }
 }
 
 .btn-modal-submit {
-  width: 592px;
+  min-width: 592px;
   height: 64px;
   border: 1px solid #f3c653;
   background-color: #000000;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 24px;
   line-height: 1.2083333333;
@@ -244,14 +226,13 @@ td {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-modal-submit:hover,
-.btn-modal-submit:focus {
+.btn-modal-submit:hover, .btn-modal-submit:focus {
   color: #000000;
   background-color: #f3c653;
 }
 @media screen and (max-width: 1023.99px) {
   .btn-modal-submit {
-    width: 384px;
+    min-width: 384px;
     font-size: 20px;
     line-height: 1.2;
   }
@@ -261,12 +242,12 @@ td {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 236px;
+  min-width: 236px;
   height: 48px;
   border: 2px solid #ffffff;
   border-radius: 25px;
   background-color: #000000;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -276,8 +257,7 @@ td {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-link:hover,
-.btn-link:focus {
+.btn-link:hover, .btn-link:focus {
   border-color: #f3c653;
   background-color: #ffffff;
 }
@@ -374,7 +354,7 @@ td {
   }
 }
 .contacts-list__title {
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   color: #f3c653;
   font-size: 14px;
@@ -426,7 +406,7 @@ td {
 }
 .contacts-list__phone-number {
   display: none;
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-size: 14px;
   line-height: 1.21;
@@ -460,8 +440,7 @@ td {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform transition-duration transition-timing-function;
 }
-.header-soc-list__icon:hover,
-.header-soc-list__icon:focus {
+.header-soc-list__icon:hover, .header-soc-list__icon:focus {
   fill: #f3c653;
 }
 
@@ -479,7 +458,7 @@ td {
   background-color: #0e0c07;
 }
 .footer__logo {
-  font-family: 'Film P3';
+  font-family: "Film P3";
   font-weight: 700;
   font-size: 40px;
   line-height: 1.08;
@@ -496,8 +475,7 @@ td {
 .footer__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer__link:focus,
-.footer__link:hover {
+.footer__link:focus, .footer__link:hover {
   color: #ffffff;
 }
 @media screen and (min-width: 1024px) {
@@ -522,11 +500,9 @@ td {
 }
 .social__link {
   fill: rgba(243, 198, 83, 0.7);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social__link:focus,
-.social__link:hover {
+.social__link:focus, .social__link:hover {
   fill: #ffffff;
   color: #ffffff;
   border-color: #ffffff;
@@ -585,7 +561,7 @@ td {
 .hero__title {
   width: 303px;
   margin: 0 auto 24px;
-  font-family: 'Film P3', 'sans-serif';
+  font-family: "Film P3", "sans-serif";
   font-size: 92px;
   line-height: 1.07;
   font-weight: 700;
@@ -631,7 +607,7 @@ td {
   width: 294px;
   margin: 0 auto;
   margin-bottom: 40px;
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: "Montserrat", "sans-serif";
   font-size: 16px;
   line-height: 1.25;
   font-weight: 600;
@@ -680,7 +656,7 @@ td {
 .hero__text {
   margin: 0 auto;
   margin-bottom: 113px;
-  font-family: 'Times New Roman', 'sans-serif';
+  font-family: "Times New Roman", "sans-serif";
   font-size: 32px;
   line-height: 1.16;
   font-weight: 700;
@@ -741,7 +717,7 @@ td {
   display: flex;
   align-items: center;
   text-align: start;
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: "Montserrat", "sans-serif";
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.01em;
@@ -811,8 +787,7 @@ td {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill, transition-duration, transition-timing-function;
 }
-.hero__soc-icon:hover,
-.hero__soc-icon:focus {
+.hero__soc-icon:hover, .hero__soc-icon:focus {
   fill: #f3c653;
 }
 
@@ -827,138 +802,93 @@ td {
   max-width: 414px;
 }
 .overlay__main {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url('../images/main-page/bg/main-hero-mobile-@1x.jpg');
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/main-page/bg/main-hero-mobile-@1x.jpg");
 }
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .overlay__main {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/main-page/bg/main-hero-mobile-@2x.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/main-page/bg/main-hero-mobile-@2x.jpg");
   }
 }
 @media screen and (min-width: 1024px) {
   .overlay__main {
     max-width: 1024px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/main-page/bg/main-hero-tablet-@1x.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/main-page/bg/main-hero-tablet-@1x.jpg");
   }
 }
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 1024px) and (min-resolution: 192dpi),
-  screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .overlay__main {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/main-page/bg/main-hero-tablet-@2x.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/main-page/bg/main-hero-tablet-@2x.jpg");
   }
 }
 @media screen and (min-width: 1280px) {
   .overlay__main {
     max-width: 1280px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/main-page/bg/main-hero-desktop-@1x.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/main-page/bg/main-hero-desktop-@1x.jpg");
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (min-resolution: 192dpi),
-  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .overlay__main {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/main-page/bg/main-hero-desktop-@2x.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/main-page/bg/main-hero-desktop-@2x.jpg");
   }
 }
 .overlay__restaurant {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url('../images/restaurant-page/bg/restaurant-hero-mobile-@1x.jpg');
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/restaurant-page/bg/restaurant-hero-mobile-@1x.jpg");
 }
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .overlay__restaurant {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/restaurant-page/bg/restaurant-hero-mobile-@2x.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/restaurant-page/bg/restaurant-hero-mobile-@2x.jpg");
   }
 }
 @media screen and (min-width: 1024px) {
   .overlay__restaurant {
     max-width: 1024px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/restaurant-page/bg/restaurant-hero-tablet-@1x.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/restaurant-page/bg/restaurant-hero-tablet-@1x.jpg");
   }
 }
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 1024px) and (min-resolution: 192dpi),
-  screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .overlay__restaurant {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/restaurant-page/bg/restaurant-hero-tablet-@2x.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/restaurant-page/bg/restaurant-hero-tablet-@2x.jpg");
   }
 }
 @media screen and (min-width: 1280px) {
   .overlay__restaurant {
     max-width: 1280px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/restaurant-page/bg/restaurant-hero-desktop-@1x.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/restaurant-page/bg/restaurant-hero-desktop-@1x.jpg");
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (min-resolution: 192dpi),
-  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .overlay__restaurant {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/restaurant-page/bg/restaurant-hero-desktop-@2x.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/restaurant-page/bg/restaurant-hero-desktop-@2x.jpg");
   }
 }
 .overlay__hotel {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url('../images/hotel-page/bg/hotel-hero-mobile-@1x.jpg');
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/hotel-page/bg/hotel-hero-mobile-@1x.jpg");
 }
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .overlay__hotel {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/hotel-page/bg/hotel-hero-mobile-@2x.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/hotel-page/bg/hotel-hero-mobile-@2x.jpg");
   }
 }
 @media screen and (min-width: 1024px) {
   .overlay__hotel {
     max-width: 1024px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/hotel-page/bg/hotel-hero-tablet-@1x.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/hotel-page/bg/hotel-hero-tablet-@1x.jpg");
   }
 }
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 1024px) and (min-resolution: 192dpi),
-  screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .overlay__hotel {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/hotel-page/bg/hotel-hero-tablet-@2x.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/hotel-page/bg/hotel-hero-tablet-@2x.jpg");
   }
 }
 @media screen and (min-width: 1280px) {
   .overlay__hotel {
     max-width: 1280px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/hotel-page/bg/hotel-hero-desktop-@1x.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/hotel-page/bg/hotel-hero-desktop-@1x.jpg");
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (min-resolution: 192dpi),
-  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .overlay__hotel {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/hotel-page/bg/hotel-hero-desktop-@2x.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/hotel-page/bg/hotel-hero-desktop-@2x.jpg");
   }
 }
 
@@ -982,7 +912,7 @@ td {
 }
 
 .page-menu__title {
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -1017,7 +947,7 @@ td {
   width: 100%;
 }
 .table__title {
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1046,7 +976,7 @@ td {
 }
 
 .table__weight {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -1054,7 +984,7 @@ td {
   letter-spacing: 0.02em;
 }
 .table__price {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1063,7 +993,7 @@ td {
   text-align: end;
 }
 .table__dish {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -1080,16 +1010,14 @@ td {
     width: 291px;
   }
 }
-.table__dish--rare,
-.table__weight--rare,
-.table__price--rare {
+.table__dish--rare, .table__weight--rare, .table__price--rare {
   padding-bottom: 8px;
 }
 .table__dish--last {
   padding-bottom: 0;
 }
 .table__composition {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -1106,13 +1034,13 @@ td {
   .table-position {
     display: flex;
     -moz-column-gap: 88px;
-    column-gap: 88px;
+         column-gap: 88px;
   }
 }
 @media screen and (min-width: 1280px) {
   .table-position {
     -moz-column-gap: 140px;
-    column-gap: 140px;
+         column-gap: 140px;
   }
 }
 
@@ -1197,7 +1125,7 @@ td {
 
 .rooms__tagline {
   margin-bottom: 8px;
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   font-size: 20px;
   line-height: 1.15;
   color: #b4b4b4;
@@ -1215,7 +1143,7 @@ td {
 
 .rooms__logo {
   margin-bottom: 32px;
-  font-family: 'Film P3';
+  font-family: "Film P3";
   font-weight: 700;
   text-transform: uppercase;
   font-size: 40px;
@@ -1242,7 +1170,7 @@ td {
 
 .rooms__heading {
   margin-bottom: 12px;
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   font-weight: 700;
   text-transform: uppercase;
   font-size: 24px;
@@ -1273,7 +1201,7 @@ td {
 
 .rooms__description {
   width: 242px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -1358,7 +1286,7 @@ td {
     position: absolute;
     z-index: 10;
     top: -214px;
-    right: 115px;
+    left: -135px;
   }
   .rooms__slider-list--triple {
     left: 115px;
@@ -1421,8 +1349,7 @@ td {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.rooms__slider-btn:hover,
-.rooms__slider-btn:focus {
+.rooms__slider-btn:hover, .rooms__slider-btn:focus {
   color: #f3c653;
 }
 
@@ -1499,7 +1426,7 @@ td {
 .room-title {
   margin-bottom: 16px;
   color: #000000;
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -1509,7 +1436,7 @@ td {
 .room-description {
   margin-bottom: 32px;
   color: #7a7a7a;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1534,7 +1461,7 @@ td {
 .category-title {
   margin-bottom: 16px;
   color: #000000;
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -1544,7 +1471,7 @@ td {
 .category-diteils {
   margin-bottom: 16px;
   color: #7a7a7a;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1565,7 +1492,7 @@ td {
 .category-nicety {
   margin-bottom: 16px;
   color: #7a7a7a;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1612,7 +1539,7 @@ td {
   margin-bottom: 32px;
   min-width: 384px;
   color: #ffffff;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -1621,11 +1548,9 @@ td {
   border: 1px solid #f3c653;
   border-radius: 25px;
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.booking-button:hover,
-.booking-button:focus {
+.booking-button:hover, .booking-button:focus {
   color: #000000;
   background-color: #f3c653;
 }
@@ -1641,7 +1566,7 @@ td {
   gap: 12px;
   justify-content: center;
   text-decoration: none;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1649,11 +1574,9 @@ td {
   letter-spacing: 0.02em;
   color: #c79002;
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.amenities-link:hover,
-.amenities-link:focus {
+.amenities-link:hover, .amenities-link:focus {
   color: #f3c653;
 }
 @media screen and (min-width: 1024px) {
@@ -1671,7 +1594,6 @@ td {
   align-items: center;
   fill: currentColor;
 }
-.link-icon__icon:hover,
-.link-icon__icon:focus {
+.link-icon__icon:hover, .link-icon__icon:focus {
   color: #f3c653;
-} /*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

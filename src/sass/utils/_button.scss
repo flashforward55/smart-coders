@@ -11,7 +11,7 @@
 
 // Кнопки, що відкривають модальні вікна
 .btn-modal-open {
-  width: 236px;
+  min-width: 236px;
   height: 48px;
 
   border: 2px solid $white-color;
@@ -41,7 +41,7 @@
 
 // Кнопка, що відкриває модальне вікно для сторінки ROOM PAGE
 .btn-roompage-modal-open {
-  width: 434px;
+  min-width: 434px;
   height: 64px;
 
   border: 1px solid $accent-yellow-color;
@@ -65,13 +65,13 @@
 
   // mobile
   @media screen and (max-width: 1023.99px) {
-    width: 384px;
+    min-width: 384px;
   }
 }
 
 // Кнопки, що закривають модальні вікна
 .btn-modal-submit {
-  width: 592px;
+  min-width: 592px;
   height: 64px;
 
   border: 1px solid $accent-yellow-color;
@@ -94,7 +94,7 @@
 
   // mobile
   @media screen and (max-width: 1023.99px) {
-    width: 384px;
+    min-width: 384px;
     font-size: 20px;
     line-height: calc(24 / 20);
   }
@@ -105,7 +105,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 236px;
+  min-width: 236px;
   height: 48px;
   border: 2px solid $white-color;
   border-radius: 25px;
