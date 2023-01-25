@@ -225,7 +225,7 @@
 
   &__soc-wrap {
     position: absolute;
-    top: 510px;
+    top: 515px;
 
     @media screen and (min-width: 1024px) {
       top: 493px;
@@ -425,7 +425,6 @@
 .btn-link-mobile {
 
   @media screen and (max-width: 1024px) {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 }
