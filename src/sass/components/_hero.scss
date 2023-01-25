@@ -435,10 +435,10 @@
   border: 2px solid #ffffff;
   border-radius: 25px;
 
-  transition-property: background-color;
+  transform: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transition-property, transition-duration, transition-timing-function;
+  transition: transform, transition-duration, transition-timing-function;
 
   &:hover,
   &:focus {
