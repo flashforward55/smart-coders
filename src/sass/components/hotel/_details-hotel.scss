@@ -1,5 +1,94 @@
 .details-hotel{
     width: 100%;
     max-width: 1280px;
-    background-image: url(../../../images/hotel-page/details-hotel/homepage-details-hotel-bg-desktop-@1x.jpg);
+    margin-left:auto;
+    margin-right: auto;
+    padding-top:24px;
+    padding-bottom:40px;
+    text-align: right;
+    background-image: $gradient, url('../images/hotel-page/details-hotel/homepage-details-hotel-bg-mobile-@1x.jpg');
+    background-color: $bg-lemon-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    @include retina{
+        background-image: $gradient, url('../images/hotel-page/details-hotel/homepage-details-hotel-bg-mobile-@2x.jpg');
+    }
+    @media screen and (min-width:414px){
+        background-image: $gradient, url('../images/hotel-page/details-hotel/homepage-details-hotel-bg-tablet-@1x.jpg');
+        @include retina {
+            background-image: $gradient, url('../images/hotel-page/details-hotel/homepage-details-hotel-bg-tablet-@2x.jpg');
+        }
+    }
+    @media screen and (min-width:1024px){
+        padding-top: 48px;
+        padding-bottom: 48px;
+        background-image: $gradient, url('../images/hotel-page/details-hotel/homepage-details-hotel-bg-desktop-@1x.jpg');
+        @include retina {
+            background-image: $gradient, url('../images/hotel-page/details-hotel/homepage-details-hotel-bg-desktop-@2x.jpg');
+        }
+    }
+}
+.details-hotel__logo{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.08;
+    letter-spacing: 0.03em;
+    color:$white-color;
+    @media screen and (min-width:414px){
+        margin-bottom: 12px;
+        font-size: 40px;
+    }
+    @media screen and (min-width:1024px){
+        margin-right: 278px;
+        margin-bottom: 16px;
+        font-size: 64px;
+    }
+    @media screen and (min-width:1280px){
+        margin-right: 338px;
+    }
+
+}
+.details-hotel__title{
+    margin-bottom: 8px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color:$white-color;
+    @media screen and (min-width:414px){
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    @media screen and (min-width:1024px){
+        margin-right: 278px;
+        margin-bottom: 8px;
+        font-size: 24px;
+    }
+    @media screen and (min-width:1280px){
+        margin-right: 338px;
+    }
+}
+.details-hotel__text{
+    margin-bottom: 40px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #BABABA;
+    @media screen and (min-width:414px){
+        margin-bottom: 48px;
+        font-size: 12px;
+    }
+    @media screen and (min-width:1024px){
+        margin-right: 278px;
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+    @media screen and (min-width:1280px){
+        margin-right: 338px;
+    }
 }
