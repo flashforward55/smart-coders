@@ -1,0 +1,90 @@
+<section class="kitchen">
+  <div class="kitchen-conteiner">
+    <p class="kitchen-text">Amet minim mollit non</p>
+    <h2 class="kitchen-h">Mimiho</h2>
+    <ul class="kitchen-cards">
+      <li class="kitchen-card-right">
+        <p class="kitchen-card-right__text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </p>
+        <img
+          src="./images/kitchens/restaurant-interior.jpg"
+          class="kitchen-card-right__img"
+          alt="готують їсти"
+        />
+      </li>
+      <li class="kitchen-card-left">
+        <img
+          src="./images/kitchens/pexels-oruri-jacome.jpg"
+          class="kitchen-card-left__img"
+          alt="м`ясо"
+        />
+        <p class="kitchen-card-left__text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </p>
+      </li>
+    </ul>
+    <div class="carusel" id="carousel">
+      <ul class="kitchens-slides">
+        <li class="kitchens-slides__slide">
+          <img src="./images/kitchens/slides/flour.jpg" class="kitchens-slides__img" alt="м`ясо" />
+        </li>
+        <li class="kitchens-slides__slide">
+          <img
+            src="./images/kitchens/slides/breakfast.jpg"
+            class="kitchens-slides__img"
+            alt="м`ясо"
+          />
+        </li>
+        <li class="kitchens-slides__slide">
+          <img src="./images/kitchens/slides/musli.jpg" class="kitchens-slides__img" alt="м`ясо" />
+        </li>
+        <li class="kitchens-slides__slide">
+          <img src="./images/kitchens/slides/orang.jpg" class="kitchens-slides__img" alt="м`ясо" />
+        </li>
+        <li class="kitchens-slides__slide">
+          <img
+            src="./images/kitchens/slides/oysters.jpg"
+            class="kitchens-slides__img"
+            alt="м`ясо"
+          />
+        </li>
+      </ul>
+      <div class="kitchens-slides__grup">
+        <svg width="24" height="24" class="kitchens-slides__left">
+          <use href="./images/icons.svg#clic-arrow-left"></use>
+        </svg>
+        <svg width="24" height="24" class="kitchens-slides__right">
+          <use href="./images/icons.svg#clic-arrow-right"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <script>
+    let count = 1;
+    let list = carousel.querySelector('.kitchens-slides');
+    let listElems = document.querySelectorAll('.kitchens-slides__img');
+    let width = listElems[0].clientWidth;
+    let margin = getComputedStyle(
+      document.querySelectorAll('.kitchens-slides__slide')[0]
+    ).marginRight;
+    let position = 0;
+    carousel.querySelector('.kitchens-slides__right').onclick = function () {
+      margin = parseInt(margin);
+      position -= width * count + margin;
+      if (position == -(width + margin) * (listElems.length - count + 1)) {
+        position = 0;
+      }
+      list.style.marginLeft = position + 'px';
+    };
+    carousel.querySelector('.kitchens-slides__left').onclick = function () {
+      position += width * count + margin;
+      if (position == width + margin) {
+        position = 0;
+      }
+      list.style.marginLeft = position + 'px';
+    };
+  </script>
+</section>
