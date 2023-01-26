@@ -48,6 +48,10 @@
   font-style: normal;
   font-weight: 400;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #7A7A7A;
   background-color: #FFFDEE;
@@ -889,45 +893,16 @@ td {
   }
 }
 
-.btn-hr {
-  min-width: 236px;
-  height: 48px;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: #f3c653;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transition-property, transition-duration, transition-timing-function;
-}
-.btn-hr:hover, .btn-hr:focus {
-  background-color: #ffffff;
+@media screen and (max-width: 1024px) {
+  .btn-modal-open-mobile {
+    margin-bottom: 24px;
+  }
 }
 
-.link-light-btn {
-  padding: 12px 30px;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: #f3c653;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transition-property, transition-duration, transition-timing-function;
-}
-.link-light-btn:hover, .link-light-btn:focus {
-  background-color: #ffffff;
+@media screen and (max-width: 1024px) {
+  .btn-link-mobile {
+    margin: 0 auto;
+  }
 }
 
 /* main.html он же index.html */
@@ -1083,6 +1058,335 @@ td {
 }
 
 /* hotel.html */
+.roomluxe {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .roomluxe {
+    padding-top: 64px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .roomluxe {
+    padding-top: 72px;
+  }
+}
+
+.roomluxe__note {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .roomluxe__note {
+    margin-bottom: 62px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .roomluxe__note {
+    margin-bottom: 72px;
+  }
+}
+
+.roomluxe__text {
+  font-family: Times New Roman;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #b4b4b4;
+}
+@media screen and (min-width: 1024px) {
+  .roomluxe__text {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+}
+
+.roomluxe__logo {
+  font-family: Film P3;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin: 0;
+  color: #494848;
+}
+@media screen and (min-width: 1024px) {
+  .roomluxe__logo {
+    font-size: 64px;
+  }
+}
+
+.roomluxe__title {
+  font-family: Times New Roman;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #000000;
+}
+@media screen and (min-width: 1024px) {
+  .roomluxe__title {
+    font-size: 30px;
+    line-height: 1.13;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .roomluxe__title {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+}
+
+.roomluxe__titlesmall {
+  text-transform: lowercase;
+}
+@media screen and (min-width: 1024px) {
+  .roomluxe__titlesmall {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .roomluxe__titlesmall {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roomluxe-roster__thumb {
+    position: relative;
+    margin-bottom: 176px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .roomluxe-roster__thumb {
+    margin-bottom: 188px;
+  }
+}
+
+.roomluxe__roster {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .roomluxe__roster {
+    display: flex;
+    margin-bottom: 0;
+  }
+}
+
+.roomluxe__item {
+  margin: 0;
+}
+.roomluxe__item:first-child {
+  margin-bottom: 32px;
+}
+.roomluxe__item:last-child {
+  margin-left: 155px;
+}
+@media screen and (min-width: 1024px) {
+  .roomluxe__item:first-child {
+    margin: 0;
+    margin-right: 26px;
+  }
+  .roomluxe__item:last-child {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(465px, 128px);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .roomluxe__item:first-child {
+    margin: 0;
+    margin-right: 155px;
+  }
+  .roomluxe__item:last-child {
+    transform: translate(554px, 128px);
+  }
+}
+
+.roomluxe__paragraf {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  width: 258px;
+  margin: 0;
+  color: #7A7A7A;
+}
+@media screen and (min-width: 1024px) {
+  .roomluxe__paragraf {
+    font-size: 16px;
+    width: 439px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .roomluxe__paragraf {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roomluxe__thumb {
+    position: relative;
+  }
+}
+
+.roomluxe-foto__thumb {
+  position: relative;
+}
+
+.roomluxe-foto {
+  position: relative;
+  bottom: 0;
+  left: -15px;
+  display: flex;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .roomluxe-foto {
+    margin-bottom: 32px;
+    left: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .roomluxe-foto {
+    margin-bottom: 40px;
+  }
+}
+
+.roomluxe-foto__item {
+  margin-right: 16px;
+}
+.roomluxe-foto__item:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 1024px) {
+  .roomluxe-foto__item {
+    margin-right: 40px;
+  }
+}
+
+.roomluxe-icon {
+  display: flex;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .roomluxe-icon {
+    margin-bottom: 0;
+    margin-left: 329px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .roomluxe-icon {
+    margin-left: 452px;
+  }
+}
+
+.roomluxe-icon__item {
+  margin-right: 32px;
+  fill: currentColor;
+  color: #000000;
+}
+.roomluxe-icon__item:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 1280px) {
+  .roomluxe-icon__item {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .roomluxe-icon__item:hover, .roomluxe-icon__item:focus {
+    color: #F3C653;
+  }
+}
+
+.roomluxe-filters {
+  text-align: center;
+}
+
+.rooluxe-filters__item {
+  margin-bottom: 16px;
+}
+.rooluxe-filters__item:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .roomluxe-filters__thumb {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-100px);
+  }
+}
+
+.roomluxe-filters__link {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 14px 64px;
+  display: inline-block;
+  background: #000000;
+  border: 2px solid #FFFDEE;
+  border-radius: 25px;
+  color: #F3C653;
+}
+@media screen and (min-width: 1280px) {
+  .roomluxe-filters__link {
+    transition: border-color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .roomluxe-filters__link:hover, .roomluxe-filters__link:focus {
+    border-color: #F3C653;
+    background-color: #FFFFFF;
+  }
+}
+
+.roomluxe-filters__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  padding: 14px 37px;
+  background: #000000;
+  border: 2px solid #FFFDEE;
+  border-radius: 25px;
+  color: #F3C653;
+}
+@media screen and (min-width: 1280px) {
+  .roomluxe-filters__button {
+    transition: border-color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .roomluxe-filters__button:hover, .roomluxe-filters__button:focus {
+    border-color: #F3C653;
+    background-color: #FFFFFF;
+  }
+}
+
+.roomluxe__room {
+  border-radius: 2px;
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
+
+.roomluxe__apartment {
+  border-radius: 2px;
+  background: #dadada;
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+}
+
 /* room.html */
 .room-container {
   padding-left: 15px;
