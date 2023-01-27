@@ -1,0 +1,304 @@
+.room-hero {
+    position: relative
+}
+
+.room-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: absolute;
+    top: 483px;
+
+    z-index: 20;
+
+    @media screen and (min-width: 414px) {
+        width: 414px;
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        top: 468px;
+
+        width: 1024px;
+        padding-left: 47px;
+        padding-right: 47px;
+    }
+
+    @media screen and (min-width: 1280px) {
+
+        top: 524px;
+
+        width: 1280px;
+        padding-left: 85px;
+        padding-right: 85px;
+
+    }
+}
+
+.room-hero-title {
+    margin-bottom: 14px;
+
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+
+    color: $white-color;
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 24px;
+        font-size: 36px;
+        line-height: 1.13;
+    }
+}
+
+.short-description {
+    margin-bottom: 15px;
+
+    width: 325px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    color: $white-color;
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 1.25;
+
+        width: 400px;
+    }
+}
+
+.room-contacts {
+    display: none;
+
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: baseline;
+    }
+}
+
+.address {
+    display: none;
+
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+        display: flex;
+        flex-direction: row;
+
+        width: 285px;
+
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 8px;
+        padding-left: 10px;
+    }
+
+}
+
+.address-point {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    fill: $accent-yellow-color;
+}
+
+.address-superscription {
+    text-decoration: none;
+
+    // width: 233px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+
+    color: $address-color;
+}
+
+.tablet-social {
+
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+.social {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @media screen and (min-width: 1023px) {
+        display: none;
+    }
+}
+
+.social-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon {
+    fill: rgba(243, 198, 83, 0.7);
+}
+
+.btn-room-modal-open {
+    position: absolute;
+
+    right: 80px;
+    top: 173px;
+
+    z-index: 999;
+    width: 236px;
+    padding: 14px 37px;
+    border: 1px solid $white-color;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    letter-spacing: 0.02em;
+
+    font-family: 'Montserat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $accent-yellow-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-yellow-color;
+        background-color: $white-color;
+        border: $accent-yellow-color;
+    }
+
+    @media screen and (min-width: 1024px) {
+        top: 140px;
+        right: 47px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        top: 64px;
+        right: 85px;
+    }
+}
+
+
+/*  Слайдер стилі */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 40px;
+    height: 40px;
+
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.65);
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+}
+
+.swiper-button-next {
+    right: 15px;
+    top: 50%;
+
+    @media screen and (min-width: 1024px) {
+        right: 47px;
+        top: 50%;
+    }
+
+    @media screen and (min-width: 1280px) {
+        right: 85px;
+        top: 57%;
+    }
+
+}
+
+.swiper-button-prev {
+    left: 15px;
+
+    @media screen and (min-width: 1024px) {
+        left: 47px;
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        left: 85px;
+        top: 57%;
+    }
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: '';
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: '';
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 1;
+}
+
+.sbn-icon {
+    align-items: center;
+    fill: $accent-yellow-color;
+}
+
+.swiper-button-next:hover .sbn-icon {
+    fill: $brown-color;
+}
+
+.swiper-button-prev:hover .sbn-icon {
+    fill: $brown-color;
+}
