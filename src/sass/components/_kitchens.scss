@@ -178,12 +178,14 @@
     &:hover,
     &:focus {
       fill: $brown-color;
+      cursor: pointer;
     }
   }
   &__right {
     &:hover,
     &:focus {
       fill: $brown-color;
+      cursor: pointer;
     }
   }
 }
