@@ -8,18 +8,64 @@
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
           consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
         </p>
-        <img
-          src="./images/kitchens/restaurant-interior.jpg"
-          class="kitchen-card-right__img"
-          alt="готують їсти"
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/kitchens/restaurant-interior-desktop.jpg    1x,
+              ./images/kitchens/restaurant-interior-desktop@2x.jpg 2x,
+              ./images/kitchens/restaurant-interior-desktop@3x.jpg 3x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/kitchens/restaurant-interior-tablet.jpg    1x,
+              ./images/kitchens/restaurant-interior-tablet@2x.jpg 2x,
+              ./images/kitchens/restaurant-interior-tablet@3x.jpg 3x
+            "
+            media="(min-width: 1024px)"
+          />
+          <img
+            srcset="
+              ./images/kitchens/restaurant-interior.jpg    1x,
+              ./images/kitchens/restaurant-interior@2x.jpg 2x,
+              ./images/kitchens/restaurant-interior@3x.jpg 3x
+            "
+            src="./images/kitchens/restaurant-interior.jpg"
+            class="kitchen-card-right__img"
+            alt="готують їсти"
+          />
+        </picture>
       </li>
       <li class="kitchen-card-left">
-        <img
-          src="./images/kitchens/pexels-oruri-jacome.jpg"
-          class="kitchen-card-left__img"
-          alt="м`ясо"
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/kitchens/pexels-oruri-jacome-desktop.jpg    1x,
+              ./images/kitchens/pexels-oruri-jacome-desktop@2x.jpg 2x,
+              ./images/kitchens/pexels-oruri-jacome-desktop@3x.jpg 3x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/kitchens/pexels-oruri-jacome-tablet.jpg    1x,
+              ./images/kitchens/pexels-oruri-jacome-tablet@2x.jpg 2x,
+              ./images/kitchens/pexels-oruri-jacome-tablet@3x.jpg 3x
+            "
+            media="(min-width: 1024px)"
+          />
+          <img
+            srcset="
+              ./images/kitchens/pexels-oruri-jacome.jpg    1x,
+              ./images/kitchens/pexels-oruri-jacome@2x.jpg 2x,
+              ./images/kitchens/pexels-oruri-jacome@3x.jpg 3x
+            "
+            src="./images/kitchens/pexels-oruri-jacome.jpg"
+            class="kitchen-card-left__img"
+            alt="готують їсти"
+          />
+        </picture>
         <p class="kitchen-card-left__text">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
           consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
