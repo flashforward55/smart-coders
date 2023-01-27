@@ -5,7 +5,7 @@
     margin-right: auto;
     padding-top:24px;
     padding-bottom:40px;
-    text-align: right;
+    text-align: center;
     background-image: $gradient, url('../images/hotel-page/details-hotel/homepage-details-hotel-bg-mobile-@1x.jpg');
     background-color: $bg-lemon-color;
     background-repeat: no-repeat;
@@ -16,6 +16,7 @@
     }
     @media screen and (min-width:1024px){
         width: 1024px;
+        text-align: right;
         background-image: $gradient, url('../images/hotel-page/details-hotel/homepage-details-hotel-bg-tablet-@1x.jpg');
         @include retina {
             background-image: $gradient, url('../images/hotel-page/details-hotel/homepage-details-hotel-bg-tablet-@2x.jpg');
@@ -31,26 +32,30 @@
         }
     }
 }
+.details-hotel__box{
+    @media screen and (min-width:414px){padding-left:0; padding-right: 0;}
+    @media screen and (min-width:1024px){padding-right: 278px;}
+    @media screen and (min-width:1280px){padding-right:338px;}
+}
 .details-hotel__logo{
     margin-bottom: 16px;
     font-weight: 700;
     font-size: 64px;
     line-height: 1.08;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.3em;
     color:$white-color;
+    text-transform: uppercase;
+    text-align: center;
+    transform: translateX(0.3em);
     @media screen and (min-width:414px){
         margin-bottom: 12px;
         font-size: 40px;
     }
     @media screen and (min-width:1024px){
-        margin-right: 278px;
         margin-bottom: 16px;
         font-size: 64px;
+        text-align: right;
     }
-    @media screen and (min-width:1280px){
-        margin-right: 338px;
-    }
-
 }
 .details-hotel__title{
     margin-bottom: 8px;
@@ -65,12 +70,8 @@
         font-size: 20px;
     }
     @media screen and (min-width:1024px){
-        margin-right: 278px;
         margin-bottom: 8px;
         font-size: 24px;
-    }
-    @media screen and (min-width:1280px){
-        margin-right: 338px;
     }
 }
 .details-hotel__text{
@@ -81,17 +82,20 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: #BABABA;
+    padding-left: 32px;
+    padding-right: 132px;
+    text-align: left;
     @media screen and (min-width:414px){
         margin-bottom: 48px;
         font-size: 12px;
     }
     @media screen and (min-width:1024px){
-        margin-right: 278px;
         margin-bottom: 40px;
         font-size: 16px;
+        padding-left: 197px;
     }
     @media screen and (min-width:1280px){
-        margin-right: 338px;
+        padding-left:348px;
     }
 }
 .buttons{
@@ -99,7 +103,5 @@
     flex-direction: column;
     align-items: flex-end;
     row-gap: 16px;
-}
-.book-btn, .price-btn {
-    display:flex;
+    padding-right:47px;
 }
