@@ -52,7 +52,7 @@
   @media (min-width: 1024px) {
     display: flex;
     align-items: center;
-    margin-top: -250px;
+    margin-top: -240px;
   }
 }
 .kitchen-card-right__text {
@@ -69,7 +69,7 @@
   }
   @media (min-width: 1280px) {
     min-width: 518px;
-    margin-right: 40px;
+    margin-right: 65px;
   }
 }
 .kitchen-card-right__img {
@@ -122,6 +122,9 @@
       width: 312px;
       font-size: 16px;
     }
+    @media (min-width: 1280px) {
+      margin-top: -75px;
+    }
   }
 }
 .carusel {
@@ -130,6 +133,8 @@
   margin-left: auto;
   margin-top: 24px;
   margin-right: -15px;
+  // border-radius: 2px;
+  // box-shadow: 5px 5px 70px 17px rgb(0 0 0 / 25%);
   @media (min-width: 1024px) {
     margin-right: 0px;
     width: 428px;
