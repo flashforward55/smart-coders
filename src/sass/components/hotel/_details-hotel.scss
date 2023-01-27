@@ -1,6 +1,6 @@
 .details-hotel{
     width: 100%;
-    max-width: 1280px;
+    width: 414px;
     margin-left:auto;
     margin-right: auto;
     padding-top:24px;
@@ -14,13 +14,15 @@
     @include retina{
         background-image: $gradient, url('../images/hotel-page/details-hotel/homepage-details-hotel-bg-mobile-@2x.jpg');
     }
-    @media screen and (min-width:414px){
+    @media screen and (min-width:1024px){
+        width: 1024px;
         background-image: $gradient, url('../images/hotel-page/details-hotel/homepage-details-hotel-bg-tablet-@1x.jpg');
         @include retina {
             background-image: $gradient, url('../images/hotel-page/details-hotel/homepage-details-hotel-bg-tablet-@2x.jpg');
         }
     }
-    @media screen and (min-width:1024px){
+    @media screen and (min-width:1280px){
+        width: 1280px;
         padding-top: 48px;
         padding-bottom: 48px;
         background-image: $gradient, url('../images/hotel-page/details-hotel/homepage-details-hotel-bg-desktop-@1x.jpg');
@@ -91,4 +93,13 @@
     @media screen and (min-width:1280px){
         margin-right: 338px;
     }
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 16px;
+}
+.book-btn, .price-btn {
+    display:flex;
 }
