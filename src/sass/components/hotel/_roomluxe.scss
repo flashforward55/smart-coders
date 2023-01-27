@@ -1,0 +1,356 @@
+.roomluxe {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 64px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 72px;
+  }
+}
+
+.roomluxe__note {
+  // @extend %list;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 62px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 72px;
+  }
+}
+
+.roomluxe__text {
+  font-family: Times New Roman;
+  font-size: 20px;
+  line-height: 1.15;
+
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  color: $tagline-color;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+}
+
+.roomluxe__logo {
+  font-family: Film P3;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+
+  margin: 0;
+
+  color: $section-logo-color;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+  }
+}
+
+// Заголовок секції
+
+.roomluxe__title {
+  font-family: Times New Roman;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  color: $black-color;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 30px;
+    line-height: 1.13;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+}
+
+.roomluxe__titlesmall {
+  text-transform: lowercase;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+  }
+}
+
+// Опис та фото номера
+.roomluxe-roster__thumb {
+  @media screen and (min-width: 1024px) {
+    position: relative;
+    margin-bottom: 176px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 188px;
+  }
+}
+
+.roomluxe__roster {
+  // @extend %list;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    margin-bottom: 0;
+  }
+}
+
+.roomluxe__item {
+  margin: 0;
+
+  &:first-child {
+    margin-bottom: 32px;
+  }
+
+  &:last-child {
+    margin-left: 155px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    &:first-child {
+      margin: 0;
+      margin-right: 26px;
+    }
+
+    &:last-child {
+      margin: 0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: translate(465px, 142px);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &:first-child {
+      margin: 0;
+      margin-right: 155px;
+    }
+
+    &:last-child {
+      transform: translate(554px, 142px);
+    }
+  }
+}
+
+.roomluxe__paragraf {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  width: 258px;
+  margin: 0;
+
+  color: $gray-text-color;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    width: 439px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 400px;
+  }
+}
+
+// Фото номеру (ванна та чашка)
+.roomluxe__thumb {
+
+  @media screen and (min-width: 1024px) {
+    position: relative;
+  }
+}
+
+.roomluxe-foto__thumb {
+  position: relative;
+}
+
+.roomluxe-foto {
+  // @extend %list;
+  position: relative;
+  bottom: 0;
+  left: -15px;
+
+  display: flex;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 32px;
+    left: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
+
+.roomluxe-foto__item {
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-right: 40px;
+  }
+}
+
+// SVG стрілочки
+
+.roomluxe-icon {
+  // @extend %list;
+  display: flex;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+    margin-left: 329px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 452px;
+  }
+}
+
+.roomluxe-icon__item {
+  margin-right: 32px;
+  fill: currentColor;
+  color: $black-color;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    transition: color 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+      color: $accent-yellow-color;
+    }
+  }
+}
+
+// Посилання та кнопка
+
+.roomluxe-filters {
+  // @extend %list;
+  text-align: center;
+}
+
+.rooluxe-filters__item {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Посилання
+
+.roomluxe-filters__thumb {
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-100px);
+  }
+}
+
+.roomluxe-filters__link {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  cursor: pointer;
+  padding: 14px 64px;
+  display: inline-block;
+
+  background: $black-color;
+  border: 2px solid $bg-lemon-color;
+  border-radius: 25px;
+
+  color: $accent-yellow-color;
+
+  @media screen and (min-width: 1280px) {
+    transition: border-color, background-color 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+      border-color: $accent-yellow-color;
+      background-color: $white-color;
+    }
+  }
+}
+
+// Кнопка
+
+.roomluxe-filters__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  cursor: pointer;
+  padding: 14px 37px;
+
+  background: $black-color;
+  border: 2px solid $bg-lemon-color;
+  border-radius: 25px;
+
+  color: $accent-yellow-color;
+
+  @media screen and (min-width: 1280px) {
+    transition: border-color, background-color 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+      border-color: $accent-yellow-color;
+      background-color: $white-color;
+    }
+  }
+}
+
+// Радіуси та тіні на фото
+
+.roomluxe__room {
+  border-radius: 2px;
+  background: $img-background-color;
+  box-shadow: $small-img-thumb-shadow;
+}
+
+.roomluxe__apartment {
+  border-radius: 2px;
+  background: $img-background-color;
+  box-shadow: $large-img-thumb-shadow;
+}
