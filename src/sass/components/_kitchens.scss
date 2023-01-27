@@ -5,7 +5,7 @@
   padding-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  background: #fffdee;
+  background: $bg-lemon-color;
   @media (min-width: 414px) {
     width: 414px;
   }
@@ -27,7 +27,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
-  color: #b4b4b4;
+  color: $tagline-color;
   @media (min-width: 1024px) {
     font-size: 32px;
   }
@@ -40,7 +40,7 @@
   font-size: 40px;
   line-height: 43px;
   letter-spacing: 0.3em;
-  color: #494848;
+  color: $section-logo-color;
   @media (min-width: 1024px) {
     font-size: 64px;
   }
@@ -61,7 +61,7 @@
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  color: #5f5f5f;
+  color: $description-text-color;
   @media (min-width: 1024px) {
     margin-bottom: -110px;
     max-width: 440px;
@@ -76,9 +76,9 @@
   margin-left: auto;
   margin-top: 28px;
   margin-bottom: 32px;
-  background: #dadada;
+  background: $img-background-color;
   border-radius: 2px;
-  box-shadow: 5px 5px 70px 17px rgb(0 0 0 / 25%);
+  box-shadow: $large-img-thumb-shadow;
   @media (min-width: 1024px) {
     max-width: 400px;
     width: 400px;
@@ -99,9 +99,9 @@
     margin-right: 20px;
     max-width: 200px;
     width: 200px;
-    background: #dadada;
+    background: $img-background-color;
     border-radius: 2px;
-    box-shadow: 5px 5px 70px 17px rgb(0 0 0 / 25%);
+    box-shadow: $large-img-thumb-shadow;
     @media (min-width: 1024px) {
       margin-right: 48px;
       max-width: 350px;
@@ -117,7 +117,7 @@
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: #c79002;
+    color: $brown-color;
     @media (min-width: 1024px) {
       width: 312px;
       font-size: 16px;
@@ -133,8 +133,6 @@
   margin-left: auto;
   margin-top: 24px;
   margin-right: -15px;
-  // border-radius: 2px;
-  // box-shadow: 5px 5px 70px 17px rgb(0 0 0 / 25%);
   @media (min-width: 1024px) {
     margin-right: 0px;
     width: 428px;
@@ -148,7 +146,7 @@
 .kitchens-slides {
   display: flex;
   list-style: none;
-  transition: 1.5s all;
+  transition: 1s all;
   &__slide {
     margin-right: 25px;
     @media (min-width: 1024px) {
@@ -179,13 +177,13 @@
     margin-right: 28px;
     &:hover,
     &:focus {
-      fill: #c79002;
+      fill: $brown-color;
     }
   }
   &__right {
     &:hover,
     &:focus {
-      fill: #c79002;
+      fill: $brown-color;
     }
   }
 }
