@@ -1,5 +1,4 @@
 /* General */
-
 // @import './common';
 @import './utils/variables';
 @import './fonts';
@@ -11,22 +10,23 @@
 @import './components/header';
 @import './components/footer';
 @import './components/hero';
-@import './components/kitchens';
 
 /* main.html он же index.html */
+@import './components/main/about-our-restaurant';
+@import './components/main/details-our-restaurant';
+@import './components/main/about-our-hotel';
+@import './components/main/details-of-our-hotel';
+@import './components/main/contacts';
 
 /* restaurant.html */
-
-// menu-restaurant
 @import './components/restaurant/menu-restaurant';
+@import './components/restaurant/kitchens';
 
 /* hotel.html */
 @import './components/hotel/roomluxe';
+@import './components/hotel/1-room-for-2-adult';
+@import './components/hotel/1-room-for-3-adult';
 
 /* room.html */
-
 @import './components/room/room-luxe-slider';
-@import './components/room/room-amenities';
-
-
 @import './components/room/room-amenities';
