@@ -1,0 +1,465 @@
+.container-modal__room {
+  width: 100%;
+  max-width: 310px;
+  padding: 60px 15px;
+  @media screen and (min-width: 414px) {
+    max-width: 414px;
+    height: 780px;
+    padding: 60px 15px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 712px;
+    height: 638px;
+    padding: 60px;
+  }
+}
+
+.modal-room__title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: $black-color;
+  @media screen and (min-width: 1024px) {
+    font-size: 40px;
+    line-height: 1.15;
+    margin-bottom: 36px;
+  }
+}
+
+.tablet-room {
+  margin-bottom: 40px;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+  }
+}
+
+.tablet-room__contact {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+  }
+}
+
+.room-name {
+  margin-bottom: 20px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+  &__input {
+    width: 100%;
+    max-width: 384px;
+    height: 54px;
+    padding-left: 12px;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+
+    border: 1px solid $brown-color;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    color: $modal-gray-text-color;
+    @media screen and (min-width: 1024px) {
+      width: 288px;
+      height: 64px;
+      font-size: 24px;
+      line-height: 1.16;
+    }
+    &::placeholder {
+      font-family: 'Times New Roman';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.15;
+      letter-spacing: 0.05em;
+
+      color: $modal-gray-text-color;
+      @media screen and (min-width: 1024px) {
+        font-size: 24px;
+        line-height: 1.16;
+      }
+    }
+  }
+
+  &__label {
+    display: block;
+    padding-left: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: $brown-color;
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}
+
+.room-number-phone {
+  margin-bottom: 20px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+  &__input {
+    width: 100%;
+    max-width: 384px;
+    height: 54px;
+    padding-left: 12px;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid $brown-color;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+
+    color: $modal-gray-text-color;
+    @media screen and (min-width: 1024px) {
+      width: 288px;
+      height: 64px;
+      font-size: 24px;
+      line-height: 1.16;
+    }
+    &::placeholder {
+      font-family: 'Times New Roman';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.15;
+      letter-spacing: 0.05em;
+
+      color: $modal-gray-text-color;
+      @media screen and (min-width: 1024px) {
+        font-size: 24px;
+        line-height: 1.16;
+      }
+    }
+  }
+  &__label {
+    display: block;
+    padding-left: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: $brown-color;
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}
+
+.room-of-people {
+  position: relative;
+  appearance: none;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+  &__select {
+    width: 100%;
+    max-width: 384px;
+    height: 64px;
+    padding-left: 12px;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid $brown-color;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    color: $modal-gray-text-color;
+    @media screen and (min-width: 1024px) {
+      width: 288px;
+      height: 64px;
+      font-size: 24px;
+      line-height: 1.16;
+    }
+  }
+
+  &__label {
+    display: block;
+    padding-left: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: $brown-color;
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}
+
+.drop-room::before {
+  content: '';
+  position: absolute;
+  top: 27px;
+  right: 15px;
+  width: 17px;
+  height: 3px;
+  border-radius: 50px;
+  background: $brown-color;
+  z-index: 10;
+  transform: rotate(-45deg);
+  transition: 500ms;
+  @media screen and (min-width: 1024px) {
+    top: 32px;
+  }
+}
+.drop-room::after {
+  content: '';
+  position: absolute;
+  top: 27px;
+  right: 25px;
+  width: 17px;
+  height: 3px;
+  border-radius: 50px;
+  background: $brown-color;
+  z-index: 10;
+  transform: rotate(45deg);
+  transition: 500ms;
+  @media screen and (min-width: 1024px) {
+    top: 32px;
+  }
+}
+
+.drop-room.active::before {
+  right: 26px;
+}
+.drop-room.active::after {
+  right: 15px;
+}
+
+.room-date {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+  }
+}
+
+.room-in-date {
+  position: relative;
+  appearance: none;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+  &__select {
+    width: 100%;
+    max-width: 384px;
+    height: 54px;
+    padding-left: 12px;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid $brown-color;
+    border-radius: 2px;
+    margin-bottom: 8px;
+
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+
+    color: $modal-gray-text-color;
+    @media screen and (min-width: 1024px) {
+      width: 288px;
+      height: 64px;
+      font-size: 24px;
+      line-height: 1.16;
+    }
+  }
+
+  &__label {
+    display: block;
+    padding-left: 12px;
+    margin-bottom: 17px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    color: $brown-color;
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.drop-room-in::before {
+  content: '';
+  position: absolute;
+  top: 27px;
+  right: 15px;
+  width: 17px;
+  height: 3px;
+  border-radius: 50px;
+  background: $brown-color;
+  z-index: 10;
+  transform: rotate(-45deg);
+  transition: 500ms;
+  @media screen and (min-width: 1024px) {
+    top: 32px;
+  }
+}
+.drop-room-in::after {
+  content: '';
+  position: absolute;
+  top: 27px;
+  right: 25px;
+  width: 17px;
+  height: 3px;
+  border-radius: 50px;
+  background: $brown-color;
+  z-index: 10;
+  transform: rotate(45deg);
+  transition: 500ms;
+  @media screen and (min-width: 1024px) {
+    top: 32px;
+  }
+}
+
+.drop-room-in.active::before {
+  right: 26px;
+}
+.drop-room-in.active::after {
+  right: 15px;
+}
+
+.room-out-date {
+  position: relative;
+  appearance: none;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+  &__select {
+    width: 100%;
+    max-width: 384px;
+    height: 54px;
+    padding-left: 12px;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid $brown-color;
+    border-radius: 2px;
+    margin-bottom: 8px;
+
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+
+    color: $modal-gray-text-color;
+    @media screen and (min-width: 1024px) {
+      width: 288px;
+      height: 64px;
+      font-size: 24px;
+      line-height: 1.16;
+    }
+  }
+
+  &__label {
+    display: block;
+    padding-left: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: $brown-color;
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}
+
+.drop-room-out::before {
+  content: '';
+  position: absolute;
+  top: 27px;
+  right: 15px;
+  width: 17px;
+  height: 3px;
+  border-radius: 50px;
+  background: $brown-color;
+  z-index: 10;
+  transform: rotate(-45deg);
+  transition: 500ms;
+  @media screen and (min-width: 1024px) {
+    top: 32px;
+  }
+}
+.drop-room-out::after {
+  content: '';
+  position: absolute;
+  top: 27px;
+  right: 25px;
+  width: 17px;
+  height: 3px;
+  border-radius: 50px;
+  background: $brown-color;
+  z-index: 10;
+  transform: rotate(45deg);
+  transition: 500ms;
+  @media screen and (min-width: 1024px) {
+    top: 32px;
+  }
+}
+
+.drop-room-out.active::before {
+  right: 26px;
+}
+.drop-room-out.active::after {
+  right: 15px;
+}
+
+.total-prn {
+  margin: 0;
+}

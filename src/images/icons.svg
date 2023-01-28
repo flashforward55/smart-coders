@@ -25,8 +25,8 @@
 <symbol id="icon-point" viewBox="0 0 32 32">
 <path d="M16 3.213c-0.004 0-0.009 0-0.013 0-4.411 0-7.987 3.576-7.987 7.987v0c0 7.639 8 17.6 8 17.6s8-9.964 8-17.6c-0.002-4.41-3.577-7.984-7.987-7.984-0.005 0-0.009 0-0.014 0h0.001zM16 15.616c-2.386 0-4.32-1.934-4.32-4.32s1.934-4.32 4.32-4.32v0c2.386 0 4.32 1.934 4.32 4.32s-1.934 4.32-4.32 4.32v0z"></path>
 </symbol>
-<symbol id="close-cross" viewBox="0 0 32 32">
-<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m27.429 3.428-24 24M3.429 3.428l24 24"/>
+<symbol id="icon-x1" viewBox="0 0 32 32">
+<path stroke-width="2" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M27.429 3.428l-24 24M3.429 3.428l24 24"></path>
 </symbol>
 
 </defs>
