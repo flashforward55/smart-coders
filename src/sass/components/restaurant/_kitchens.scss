@@ -70,6 +70,7 @@
   @media (min-width: 1280px) {
     min-width: 518px;
     margin-right: 65px;
+    margin-top: -60px;
   }
 }
 .kitchen-card-right__img {
@@ -84,6 +85,10 @@
     width: 400px;
     margin-top: 0px;
     z-index: 2;
+  }
+  @media (min-width: 1280px) {
+    max-width: 460px;
+    width: 460px;
   }
 }
 .kitchen-card-left {
@@ -129,18 +134,21 @@
 }
 .carusel {
   overflow-x: clip;
-  width: 330px;
+  width: 350px;
   margin-left: auto;
   margin-top: 24px;
   margin-right: -15px;
+  padding-left: 18px;
   @media (min-width: 1024px) {
     margin-right: 0px;
-    width: 428px;
+    width: 468px;
     margin-top: -30px;
+    padding-left: 18px;
   }
   @media (min-width: 1280px) {
-    width: 548px;
+    width: 584px;
     margin-top: -145px;
+    padding-left: 18px;
   }
 }
 .kitchens-slides {
@@ -156,6 +164,7 @@
   &__img {
     max-width: 245px;
     border-radius: 2px;
+    box-shadow: 2px 2px 15px 4px rgb(0 0 0 / 25%);
     @media (min-width: 1024px) {
       width: 194px;
     }

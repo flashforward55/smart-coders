@@ -299,20 +299,23 @@
     let count = 1;
     let list = document.querySelector('.kitchens-slides');
     let listElems = document.querySelectorAll('.kitchens-slides__img');
-    let width = listElems[0].clientWidth;
+    // let width = listElems[0].clientWidth;
     let margin = getComputedStyle(
       document.querySelectorAll('.kitchens-slides__slide')[0]
     ).marginRight;
     let position = 0;
-    document.querySelector('.kitchens-slides__right').onclick = function () {
+    document.querySelector('.kitchens-slides__right').addEventListener('click', left);
+    function left() {
+      let width = listElems[0].clientWidth;
       margin = parseInt(margin);
       position -= width * count + margin;
       if (position == -(width + margin) * (listElems.length - count + 1)) {
         position = 0;
       }
       list.style.marginLeft = position + 'px';
-    };
+    }
     document.querySelector('.kitchens-slides__left').onclick = function () {
+      let width = listElems[0].clientWidth;
       position += width * count + margin;
       if (position == width + margin) {
         position = 0;
