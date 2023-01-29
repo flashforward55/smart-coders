@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Готель</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png" />
+    <link rel="manifest" href="./icons/site.webmanifest" />
+    <link rel="mask-icon" href="./icons/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Готель</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png" />
-  <link rel="manifest" href="./icons/site.webmanifest" />
-  <link rel="mask-icon" href="./icons/safari-pinned-tab.svg" color="#5bbad5" />
-  <meta name="msapplication-TileColor" content="#00aba9" />
-  <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./sass/index.scss" />
-  <script type="module" src="./index.js"></script>
-</head>
-
-<body>
-  <!-- ❗️❗️❗️ Add partials like so for every page -->
-  <!-- Header -->
-  <include src="./partials/header.html"> </include>
-  <!-- Main -->
-  <main>
-    <!-- Hero -->
-    <include src="./partials/hotel/hero-hotel.html"></include>
-    <!-- 1 room luxe for 2 adult -->
-    <include src="./partials/hotel/2luxe.html"></include>
-    <!-- 1 room for 3 adult -->
-    <include src="./partials/hotel/1-room-for-3-adult.html"></include>
-    <!-- 1 room for 2 adult -->
-    <include src="./partials/hotel/1-room-for-2-adult.html"></include>
-  </main>
-  <!-- Footer -->
-  <include src="./partials/footer.html"></include>
-  <!-- Modals -->
-  <include src="./partials/modal/price.html"></include>
-  <include src="./partials/modal/room.html"></include>
-</body>
-
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <!-- Header -->
+    <include src="./partials/header.html"> </include>
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <include src="./partials/hotel/hero-hotel.html"></include>
+      <!-- 1 room luxe for 2 adult -->
+      <include src="./partials/hotel/2luxe.html"></include>
+      <!-- 1 room for 3 adult -->
+      <include src="./partials/hotel/room-for-3-adult.html"></include>
+      <!-- 1 room for 2 adult -->
+      <include src="./partials/hotel/room-for-2-adult.html"></include>
+    </main>
+    <!-- Footer -->
+    <include src="./partials/footer.html"></include>
+    <!-- Modals -->
+    <include src="./partials/modal/price.html"></include>
+    <include src="./partials/modal/room.html"></include>
+  </body>
 </html>
