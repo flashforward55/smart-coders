@@ -128,7 +128,7 @@
   }
 }
 .carusel {
-  overflow: hidden;
+  overflow-x: clip;
   width: 330px;
   margin-left: auto;
   margin-top: 24px;

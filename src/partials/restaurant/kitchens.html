@@ -72,7 +72,7 @@
         </p>
       </li>
     </ul>
-    <div class="carusel" id="carousel">
+    <div class="carusel">
       <ul class="kitchens-slides">
         <li class="kitchens-slides__slide">
           <picture>
@@ -297,14 +297,14 @@
   </div>
   <script>
     let count = 1;
-    let list = carousel.querySelector('.kitchens-slides');
+    let list = document.querySelector('.kitchens-slides');
     let listElems = document.querySelectorAll('.kitchens-slides__img');
     let width = listElems[0].clientWidth;
     let margin = getComputedStyle(
       document.querySelectorAll('.kitchens-slides__slide')[0]
     ).marginRight;
     let position = 0;
-    carousel.querySelector('.kitchens-slides__right').onclick = function () {
+    document.querySelector('.kitchens-slides__right').onclick = function () {
       margin = parseInt(margin);
       position -= width * count + margin;
       if (position == -(width + margin) * (listElems.length - count + 1)) {
@@ -312,7 +312,7 @@
       }
       list.style.marginLeft = position + 'px';
     };
-    carousel.querySelector('.kitchens-slides__left').onclick = function () {
+    document.querySelector('.kitchens-slides__left').onclick = function () {
       position += width * count + margin;
       if (position == width + margin) {
         position = 0;
