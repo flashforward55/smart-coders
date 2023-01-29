@@ -50,10 +50,14 @@
   font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 1.16;
+  font-size: 20px;
+  line-height: 1.14;
   letter-spacing: 0.05em;
   color: $black-color;
+  @media screen and (min-width: 414px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
   @media screen and (min-width: 1024px) {
     font-size: 40px;
     line-height: 1.15;
