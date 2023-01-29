@@ -148,6 +148,7 @@
   @media (min-width: 1280px) {
     width: 584px;
     margin-top: -145px;
+    margin-right: -40px;
     padding-left: 18px;
   }
 }
@@ -175,11 +176,12 @@
   }
   &__grup {
     margin-left: auto;
-    margin-top: 15px;
+    margin-top: 35px;
     width: 100px;
+    margin-right: -20px;
     @media (min-width: 1024px) {
       margin-top: 40px;
-      margin-right: -20px;
+      margin-right: 0px;
     }
   }
   &__left {
