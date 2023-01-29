@@ -1,126 +1,343 @@
-<!--Секція Герой на сторінці Кімната-->
-  <section class="room-hero">
-    
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <picture>
-            <source srcset="./images/room-pages/hero-room-traditionale/room-hero-luxe-desktop.jpg 1x, ./images/room-pages/hero-room-traditionale/room-hero-luxe-desktop@2x.jpg 2x" media="(min-width: 1280px)">
-            <source srcset="./images/room-pages/hero-room-traditionale/room-hero-luxe-tablet.jpg 1x, ./images/room-pages/hero-room-traditionale/room-hero-luxe-tablet@2x.jpg 2x" media="(min-width: 1024px)">
-            <img srcset="./images/room-pages/hero-room-traditionale/room-hero-luxe-mobile.jpg 1x, ./images/room-pages/hero-room-traditionale/room-hero-luxe-mobile@2x.jpg 2x" src="./images/room-pages/hero-room-traditionale/room-hero-luxe-mobile.jpg" alt="Двомісний номер люкс">
-          </picture>
+<section class="container-room">
+  <div class="room room__gradient"></div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-1-hero-desktop-@1x.webp 1x,
+              ./images/room-pages/bg/rooms-1-hero-desktop-@2x.webp 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-1-hero-tablet-@1x.webp 1x,
+              ./images/room-pages/bg/rooms-1-hero-tablet-@2x.webp 2x
+            "
+            media="(min-width: 1024px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-1-hero-mobile-@1x.webp 1x,
+              ./images/room-pages/bg/rooms-1-hero-mobile-@2x.webp 2x
+            "
+            media="(min-width: 414px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-1-hero-desktop-@1x.jpg 1x,
+              ./images/room-pages/bg/rooms-1-hero-desktop-@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-1-hero-tablet-@1x.jpg 1x,
+              ./images/room-pages/bg/rooms-1-hero-tablet-@2x.jpg 2x
+            "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-1-hero-mobile-@1x.jpg 1x,
+              ./images/room-pages/bg/rooms-1-hero-mobile-@2x.jpg 2x
+            "
+            media="(min-width: 414px)"
+          />
+          <img
+            src="./images/room-pages/bg/rooms-1-hero-desktop-@1x.jpg"
+            alt="фото рецепцї"
+            class="img"
+          />
+        </picture>
+        <div class="room__info">
+          <h1 class="room__title"><span class="room__subtitle">Двомісний номер&nbsp;</span>люкс</h1>
+          <p class="room__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+          <div class="room__contact">
+            <address class="room__address">
+              <a
+                class="room__address-link link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                ><svg class="room__address-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-point"></use></svg
+                >Україна, м. Полтава,
+                <br />
+                вул. Маршала Бірюзова, 15</a
+              >
+            </address>
+            <ul class="room__soc-list list">
+              <li class="room__soc-item">
+                <a
+                  href="https://www.instagram.com/"
+                  class="room__soc-link"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                >
+                  <svg class="room__soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="room__soc-item">
+                <a
+                  href="https://www.facebook.com/"
+                  class="room__soc-link"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                >
+                  <svg class="room__soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="room__soc-item">
+                <a
+                  href="https://telegram.org/"
+                  class="room__soc-link"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                >
+                  <svg class="room__soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <div class="swiper-slide">
-          <picture>
-            <source srcset="./images/room-pages/hero-room-traditionale/room-hero-interrior-desktop.jpg 1x, ./images/room-pages/hero-room-traditionale/room-hero-interrior-desktop@2x.jpg 2x" media="(min-width: 1280px)">
-            <source srcset="./images/room-pages/hero-room-traditionale/room-hero-interrior-tablet.jpg 1x, ./images/room-pages/hero-room-traditionale/room-hero-interrior-tablet@2x.jpg 2x" media="(min-width: 1024px)">
-            <img srcset="./images/room-pages/hero-room-traditionale/room-hero-interrior-mobile.jpg 1x, ./images/room-pages/hero-room-traditionale/room-hero-interrior-mobile@2x.jpg 2x" src="./images/room-pages/hero-room-traditionale/room-hero-interrior-mobile.jpg" alt="Вітальня двомісного номеру люкс">
-          </picture>
-        </div>
-
-        <div class="swiper-slide">
-          <picture>
-            <source srcset="./images/room-pages/hero-room-traditionale/room-hero-badroom-desktop.jpg 1x, ./images/room-pages/hero-room-traditionale/room-hero-badroom-desktop@2x.jpg 2x" media="(min-width: 1280px)">
-            <source srcset="./images/room-pages/hero-room-traditionale/room-hero-badroom-tablet.jpg 1x, ./images/room-pages/hero-room-traditionale/room-hero-badroom-tablet@2x.jpg 2x" media="(min-width: 1024px)">
-            <img srcset="./images/room-pages/hero-room-traditionale/room-hero-badroom-mobile.jpg 1x, ./images/room-pages/hero-room-traditionale/room-hero-badroom-mobile@2x.jpg 2x" src="./images/room-pages/hero-room-traditionale/room-hero-badroom-mobile.jpg" alt="Ванна кімната двомісного номеру люкс">
-          </picture>
-        </div>
+        <button
+          class="btn btn-modal-open btn-modal-open--transparent room__btn js-open-modal"
+          data-modal="3"
+        >
+          Переглянути ціни
+        </button>
       </div>
-
-      <div class="swiper-button-next">
-        <svg class="sbn-icon">
-          <use href="./images/icons.svg#clic-arrow-right"></use>
-        </svg>
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-2-hero-desktop-@1x.webp 1x,
+              ./images/room-pages/bg/rooms-2-hero-desktop-@2x.webp 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-2-hero-tablet-@1x.webp 1x,
+              ./images/room-pages/bg/rooms-2-hero-tablet-@2x.webp 2x
+            "
+            media="(min-width: 1024px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-2-hero-mobile-@1x.webp 1x,
+              ./images/room-pages/bg/rooms-2-hero-mobile-@2x.webp 2x
+            "
+            media="(min-width: 414px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-2-hero-desktop-@1x.jpg 1x,
+              ./images/room-pages/bg/rooms-2-hero-desktop-@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-2-hero-tablet-@1x.jpg 1x,
+              ./images/room-pages/bg/rooms-2-hero-tablet-@2x.jpg 2x
+            "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-2-hero-mobile-@1x.jpg 1x,
+              ./images/room-pages/bg/rooms-2-hero-mobile-@2x.jpg 2x
+            "
+            media="(min-width: 414px)"
+          />
+          <img
+            src="./images/room-pages/bg/rooms-2-hero-desktop-@1x.jpg"
+            alt="фото готельного номера"
+            class="img"
+          />
+        </picture>
+        <div class="room__info">
+          <h1 class="room__title">
+            <span class="room__subtitle">Трьохмісний номер </span>
+          </h1>
+          <p class="room__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+          <div class="room__contact room__contact--margin">
+            <address class="room__address">
+              <a
+                class="room__address-link link"
+                href="https://goo.gl/maps/ithtjKm9xKE7jttB6"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                ><svg class="room__address-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-point"></use></svg
+                >Україна, м. Полтава,
+                <br />
+                вул. Маршала Бірюзова, 15</a
+              >
+            </address>
+            <ul class="room__soc-list list">
+              <li class="room__soc-item">
+                <a href="" class="room__soc-link">
+                  <svg class="room__soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="room__soc-item">
+                <a href="" class="room__soc-link">
+                  <svg class="room__soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="room__soc-item">
+                <a href="" class="room__soc-link">
+                  <svg class="room__soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          class="btn btn-modal-open btn-modal-open--transparent room__btn js-open-modal"
+          data-modal="3"
+        >
+          Переглянути ціни
+        </button>
       </div>
-      <div class="swiper-button-prev">
-        <svg class="sbn-icon">
-          <use href="./images/icons.svg#clic-arrow-left"></use>
-        </svg>
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-3-hero-desktop-@1x.webp 1x,
+              ./images/room-pages/bg/rooms-3-hero-desktop-@2x.webp 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-3-hero-tablet-@1x.webp 1x,
+              ./images/room-pages/bg/rooms-3-hero-tablet-@2x.webp 2x
+            "
+            media="(min-width: 1024px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-3-hero-mobile-@1x.webp 1x,
+              ./images/room-pages/bg/rooms-3-hero-mobile-@2x.webp 2x
+            "
+            media="(min-width: 414px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-3-hero-desktop-@1x.jpg 1x,
+              ./images/room-pages/bg/rooms-3-hero-desktop-@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-3-hero-tablet-@1x.jpg 1x,
+              ./images/room-pages/bg/rooms-3-hero-tablet-@2x.jpg 2x
+            "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="
+              ./images/room-pages/bg/rooms-3-hero-mobile-@1x.jpg 1x,
+              ./images/room-pages/bg/rooms-3-hero-mobile-@2x.jpg 2x
+            "
+            media="(min-width: 414px)"
+          />
+          <img
+            src="./images/room-pages/bg/rooms-3-hero-desktop-@1x.jpg"
+            alt="фото ванної кімнати"
+            class="img"
+          />
+        </picture>
+        <div class="room__info">
+          <h1 class="room__title">
+            <span class="room__subtitle">Двомісний номер </span>
+          </h1>
+          <p class="room__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+          <div class="room__contact room__contact--margin">
+            <address class="room__address">
+              <a
+                class="room__address-link link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                ><svg class="room__address-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-point"></use></svg
+                >Україна, м. Полтава,
+                <br />
+                вул. Маршала Бірюзова, 15</a
+              >
+            </address>
+            <ul class="room__soc-list list">
+              <li class="room__soc-item">
+                <a href="" class="room__soc-link">
+                  <svg class="room__soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="room__soc-item">
+                <a href="" class="room__soc-link">
+                  <svg class="room__soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="room__soc-item">
+                <a href="" class="room__soc-link">
+                  <svg class="room__soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          class="btn btn-modal-open btn-modal-open--transparent room__btn js-open-modal"
+          data-modal="3"
+        >
+          Переглянути ціни
+        </button>
       </div>
     </div>
-
-    <div class="hero-room-container">
-      <h1 class="room-hero-title">ДВОМІСНИЙ НОМЕР люкс</h1>
-      <p class="short-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-      <div class="room-contacts">
-        <address class="address">
-            <svg class="address-point">
-              <use href="./images/icons.svg#icon-point"></use>
-            </svg>
-          <a href="https://goo.gl/maps/ATwjEWN8sphHWL9q6"
-          class="address-superscription"
-          target="_blank"
-          rel="noreferrer noopener nofollow">
-          Україна, м. Полтава,<br>ул. Маршала Бірюзова, 15</a>
-        </address>
-
-        <ul class="tablet-social">
-          <li class="social-item">
-            <a class="network" href="https://www.instagram.com/" 
-            target="_blank"
-            rel="nofollow noopener noreferrer">
-              <svg class="social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a class="network" href="https://www.facebook.com/" 
-            target="_blank"
-            rel="nofollow noopener noreferrer">
-              <svg class="social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a class="network" href="https://telegram.org/"
-            target="_blank"
-            rel="nofollow noopener noreferrer">
-              <svg class="social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-telegram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul> 
-      </div>
-
-    <ul class="roomhero-social">
-          <li class="social-item">
-            <a class="network" href="https://www.instagram.com/" 
-            target="_blank"
-            rel="nofollow noopener noreferrer">
-              <svg class="social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a class="network" href="https://www.facebook.com/" 
-            target="_blank"
-            rel="nofollow noopener noreferrer">
-              <svg class="social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a class="network" href="https://telegram.org/"
-            target="_blank"
-            rel="nofollow noopener noreferrer">
-              <svg class="social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-telegram"></use>
-              </svg>
-            </a>
-          </li>
-    </ul>        
-    
-      <button class="btn-room-modal-open js-open-modal" data-modal="3" type="button">Переглянути ціни</button>
-    </div>
-
-  </section>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
