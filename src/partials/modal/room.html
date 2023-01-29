@@ -1,0 +1,117 @@
+<!-- Modal Room -->
+<div class="modal container-modal__room" data-modal="2">
+    <button type="button" class="modal_close js-modal-close">
+        <svg class="icon icon-x1">
+            <use href="./images/icons.svg#icon-x1"></use>
+        </svg>
+    </button>
+    <p class="modal-room__title">ЗАБРОНЮВАТИ НОМЕР</p>
+
+    <form class="modal-room-form" autocomplete="on">
+
+        <div class="tablet-room">
+            <div class="tablet-room__contact">
+                <div class="room-name">
+                    <input type="text" class="room-name__input" placeholder="Ваше ім’я" name="name" id="room_name"
+                        minlength="3" maxlength="10" pattern="^[Є-Яа-ї]+$" required>
+                    <label for="room_name" class="room-name__label">На кого забронювати номер?</label>
+                </div>
+
+                <div class="room-number-phone">
+                    <input type="tel" class="room-number-phone__input" name="tel" id="room-phone"
+                        placeholder="+38 (___) ___-__-__" data-phone-pattern="+38 (___) ___-__-__" maxlength="19"
+                        required>
+                    <label for="room-phone" class="room-number-phone__label">Номер телефону</label>
+                </div>
+            </div>
+
+            <div class="room-of-people drop-room">
+                <select class="room-of-people__select" name="room" id="room">
+                    <option value="1">Двомісний номер</option>
+                    <option value="2">Трьохмістний номер</option>
+                    <option value="3">Двомістний номер люкс</option>
+                </select>
+                <label for="room" class="room-of-people__label">Категорія номеру</label>
+            </div>
+
+            <div class="room-date">
+                <div class="room-in-date drop-room-in">
+                    <select class="room-in-date__select" name="room-in-date" id="in-date">
+                        <option value="1">Сьогодні</option>
+                        <option value="2">Завтра</option>
+                        <option value="3">Вибрати дату</option>
+                    </select>
+                    <label class="room-in-date__label" for="in-date">Дата заїзду</label>
+                </div>
+                <div class="room-out-date drop-room-out">
+                    <select class="room-out-date__select" name="room-out-date" id="out-date">
+                        <option value="1">Сьогодні</option>
+                        <option value="2">Завтра</option>
+                        <option value="3">Вибрати дату</option>
+                    </select>
+                    <label class="room-out-date__label" for="out-date">Дата виїзду</label>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn-modal-submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+
+    </form>
+</div>
+
+<!-- Подложка под модальным окном -->
+<div class="overlay-modal js-overlay-modal"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        const dropRoom = document.querySelector('.drop-room')
+
+        dropRoom.addEventListener('click', () => {
+            dropRoom.classList.toggle('active')
+        })
+
+        window.addEventListener('click', e => {
+            const target = e.target
+            if (!target.closest('.drop-room') && !target.closest('.drop-room')) {
+                dropRoom.classList.remove('active')
+            }
+        })
+
+    })
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        const dropRoomIn = document.querySelector('.drop-room-in')
+
+        dropRoomIn.addEventListener('click', () => {
+            dropRoomIn.classList.toggle('active')
+        })
+
+        window.addEventListener('click', e => {
+            const target = e.target
+            if (!target.closest('.drop-room-in') && !target.closest('.drop-room-in')) {
+                dropRoomIn.classList.remove('active')
+            }
+        })
+
+    })
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        const dropRoomOut = document.querySelector('.drop-room-out')
+
+        dropRoomOut.addEventListener('click', () => {
+            dropRoomOut.classList.toggle('active')
+        })
+
+        window.addEventListener('click', e => {
+            const target = e.target
+            if (!target.closest('.drop-room-out') && !target.closest('.drop-room-out')) {
+                dropRoomOut.classList.remove('active')
+            }
+        })
+
+    })  
+</script>

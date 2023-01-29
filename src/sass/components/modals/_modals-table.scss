@@ -1,0 +1,406 @@
+.container-modal__table {
+  width: 100%;
+  max-width: 310px;
+  padding: 60px 15px;
+  @media screen and (min-width: 414px) {
+    max-width: 414px;
+    height: 668px;
+    padding: 60px 15px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 712px;
+    height: 522px;
+    padding: 60px;
+  }
+}
+
+.modal_close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  right: 16px;
+  top: 16px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.icon {
+  display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+  width: 24px;
+  height: 24px;
+  @include transition(stroke);
+
+  &:hover,
+  &:focus {
+    stroke: $brown-color;
+    @include transition(stroke);
+  }
+}
+
+.modal-table__title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  color: $black-color;
+  @media screen and (min-width: 414px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 40px;
+    line-height: 1.15;
+  }
+}
+
+.table_tablet {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}
+
+.table-name {
+  margin-bottom: 20px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 28px;
+  }
+  &__input {
+    width: 100%;
+    max-width: 384px;
+    height: 54px;
+    padding-left: 12px;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+
+    border: 1px solid $brown-color;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    color: $modal-gray-text-color;
+    @media screen and (min-width: 1024px) {
+      width: 288px;
+      height: 64px;
+      font-size: 24px;
+      line-height: 1.16;
+    }
+    &::placeholder {
+      font-family: 'Times New Roman';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.05em;
+
+      color: $modal-gray-text-color;
+      @media screen and (min-width: 1024px) {
+        font-size: 24px;
+        line-height: 1.16;
+      }
+    }
+  }
+
+  &__label {
+    display: block;
+    padding-left: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: $brown-color;
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}
+
+.table-phone {
+  margin-bottom: 20px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+  &__input {
+    width: 100%;
+    max-width: 384px;
+    height: 54px;
+    padding-left: 12px;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid $brown-color;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    color: $modal-gray-text-color;
+    @media screen and (min-width: 1024px) {
+      width: 288px;
+      height: 64px;
+      font-size: 24px;
+      line-height: 1.16;
+    }
+    &::placeholder {
+      font-family: 'Times New Roman';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.15;
+      letter-spacing: 0.05em;
+
+      color: $modal-gray-text-color;
+      @media screen and (min-width: 1024px) {
+        font-size: 24px;
+        line-height: 1.16;
+      }
+    }
+  }
+  &__label {
+    display: block;
+    padding-left: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    /* Brown */
+
+    color: $brown-color;
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}
+
+.number-of-people {
+  position: relative;
+  appearance: none;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 28px;
+  }
+  &__select {
+    width: 100%;
+    max-width: 384px;
+    height: 54px;
+    padding-left: 12px;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid $brown-color;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+
+    color: $modal-gray-text-color;
+    @media screen and (min-width: 1024px) {
+      width: 288px;
+      height: 64px;
+      font-size: 24px;
+      line-height: 1.16;
+    }
+    &::placeholder {
+      font-family: 'Times New Roman';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.15;
+      letter-spacing: 0.05em;
+
+      color: $modal-gray-text-color;
+      @media screen and (min-width: 1024px) {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  &__label {
+    display: block;
+    padding-left: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    /* Brown */
+
+    color: $brown-color;
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}
+
+.drop-people::before {
+  content: '';
+  position: absolute;
+  top: 27px;
+  right: 15px;
+  width: 17px;
+  height: 3px;
+  border-radius: 50px;
+  background: $brown-color;
+  z-index: 10;
+  transform: rotate(-45deg);
+  transition: 500ms;
+  @media screen and (min-width: 1024px) {
+    top: 32px;
+  }
+}
+.drop-people::after {
+  content: '';
+  position: absolute;
+  top: 27px;
+  right: 25px;
+  width: 17px;
+  height: 3px;
+  border-radius: 50px;
+  background: $brown-color;
+  z-index: 10;
+  transform: rotate(45deg);
+  transition: 500ms;
+  @media screen and (min-width: 1024px) {
+    top: 32px;
+  }
+}
+
+.drop-people.active::before {
+  right: 26px;
+}
+.drop-people.active::after {
+  right: 15px;
+}
+
+.drop-date::before {
+  content: '';
+  position: absolute;
+  top: 27px;
+  right: 15px;
+  width: 17px;
+  height: 3px;
+  border-radius: 50px;
+  background: $brown-color;
+  z-index: 10;
+  transform: rotate(-45deg);
+  transition: 500ms;
+  @media screen and (min-width: 1024px) {
+    top: 32px;
+  }
+}
+.drop-date::after {
+  content: '';
+  position: absolute;
+  top: 27px;
+  right: 25px;
+  width: 17px;
+  height: 3px;
+  border-radius: 50px;
+  background: $brown-color;
+  z-index: 10;
+  transform: rotate(45deg);
+  transition: 500ms;
+  @media screen and (min-width: 1024px) {
+    top: 32px;
+  }
+}
+
+.drop-date.active::before {
+  right: 26px;
+}
+.drop-date.active::after {
+  right: 15px;
+}
+
+.table-date {
+  position: relative;
+  margin-bottom: 40px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 384px;
+    height: 54px;
+    padding-left: 12px;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid $brown-color;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    color: $modal-gray-text-color;
+
+    @media screen and (min-width: 1024px) {
+      width: 288px;
+      height: 64px;
+    }
+  }
+
+  &__label {
+    display: block;
+    padding-left: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: $brown-color;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}

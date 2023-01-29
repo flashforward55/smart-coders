@@ -1,0 +1,94 @@
+<!-- Modal Table -->
+<div class="modal container-modal__table" data-modal="1">
+    <button type="button" class="modal_close js-modal-close">
+        <svg class="icon icon-x1">
+            <use href="./images/icons.svg#icon-x1"></use>
+        </svg>
+    </button>
+    <p class="modal-table__title">ЗАБРОНЮВАТИ СТОЛИК</p>
+
+    <form class="table-form" autocomplete="on">
+        <div class="table_tablet">
+            <div class="table_contacts">
+                <div class="table-name">
+                    <input type="text" class="table-name__input" placeholder="Ваше ім’я" name="name" id="table_name"
+                        minlength="3" maxlength="10" pattern="^[Є-Яа-ї]+$" required>
+                    <label for="table_name" class="table-name__label">На кого забронювати столик?</label>
+                </div>
+
+                <div class="table-phone">
+                    <input type="tel" class="table-phone__input" name="tel" id="number-phone"
+                        placeholder="+38 (___) ___-__-__" data-phone-pattern="+38 (___) ___-__-__" maxlength="19"
+                        required>
+                    <label for="number-phone" class="table-phone__label">Номер телефону</label>
+                </div>
+            </div>
+
+            <div class="table-order">
+                <div class="number-of-people drop-people">
+                    <select class="number-of-people__select" name="people" id="people">
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <label for="people" class="number-of-people__label">Столик на яку кількість осіб?</label>
+                </div>
+
+
+                <div class="table-date drop-date">
+                    <select class="table-date__input" name="date" id="date">
+                        <option value="1">Сьогодні</option>
+                        <option value="2">Завтра</option>
+                        <option value="3">Вибрати дату</option>
+                    </select>
+                    <label class="table-date__label" for="date">На яку дату бронювати?</label>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn-modal-submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+
+    </form>
+</div>
+
+<!-- Подложка под модальным окном -->
+<div class="overlay-modal js-overlay-modal"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        const dropPeople = document.querySelector('.drop-people')
+
+        dropPeople.addEventListener('click', () => {
+            dropPeople.classList.toggle('active')
+        })
+
+        window.addEventListener('click', e => {
+            const target = e.target
+            if (!target.closest('.drop-people') && !target.closest('.drop-people')) {
+                dropPeople.classList.remove('active')
+            }
+        })
+
+    })
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        const dropDate = document.querySelector('.drop-date')
+
+        dropDate.addEventListener('click', () => {
+            dropDate.classList.toggle('active')
+        })
+
+        window.addEventListener('click', e => {
+            const target = e.target
+            if (!target.closest('.drop-date') && !target.closest('.drop-date')) {
+                dropDate.classList.remove('active')
+            }
+        })
+
+    })
+</script>

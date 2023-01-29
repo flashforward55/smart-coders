@@ -1,0 +1,53 @@
+<!-- Modal Price -->
+<div class="modal container-modal__price" data-modal="3">
+    <button type="button" class="modal_close js-modal-close">
+        <svg class="icon icon-x1">
+            <use href="./images/icons.svg#icon-x1"></use>
+        </svg>
+    </button>
+    <p class="modal-price__title">ЦІНИ НА НОМЕР</p>
+
+    <p class="modal-price__subtitle">Двомісний люкс</p>
+
+    <p class="modal-price__category">Категорія номеру</p>
+
+    <form class="modal-price-form">
+
+        <div class="price-night">
+            <div class="price-night__box drop-price">
+                <select class="price-night__select" name="night">
+                    <option value="1000">1</option>
+                    <option value="2000">2</option>
+                    <option value="2500">3</option>
+                </select>
+                <label for="people" class="price-night__label">Кількість ночей</label>
+            </div>
+
+            <div>
+                <input class="total-grn" type="number" name="total_grn" value="1000" id="price-total" disabled>
+                <label for="price-total" class="price-total">грн</label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn-modal-submit">ЗАБРОНЮВАТИ НОМЕР</button>
+    </form>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        const dropPrice = document.querySelector('.drop-price')
+
+        dropPrice.addEventListener('click', () => {
+            dropPrice.classList.toggle('active')
+        })
+
+        window.addEventListener('click', e => {
+            const target = e.target
+            if (!target.closest('.drop-price') && !target.closest('.drop-price')) {
+                dropPrice.classList.remove('active')
+            }
+        })
+
+    })
+</script>
