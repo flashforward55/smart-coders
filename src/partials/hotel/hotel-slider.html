@@ -15,10 +15,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
-
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <!-- Header -->
@@ -33,19 +34,15 @@
       <include src="./partials/hotel/room-for-3-adult.html"></include>
       <!-- 1 room for 2 adult -->
       <include src="./partials/hotel/room-for-2-adult.html"></include>
-      <include src="./partials/hotel/room-for-2-adult-slider.html"></include>
     </main>
     <!-- Footer -->
     <include src="./partials/footer.html"></include>
-    <!-- Modals -->
-    <include src="./partials/modal/price.html"></include>
-    <include src="./partials/modal/room.html"></include>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <script src="js/room-hotel-slider.js"></script>
-    <!-- <script src="js/vendors/swiper-bundle.min.js"></script> -->
+    <!-- <script src="js/room-hotel-slider.js"></script> -->
+    <script src="js/vendors/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
