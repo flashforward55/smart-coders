@@ -126,7 +126,8 @@
 
   // mobile
   @media screen and (max-width: 1023.99px) {
-    width: 384px;
+    width: 100%;
+    max-width: 384px;
     font-size: 20px;
     line-height: calc(24 / 20);
   }
