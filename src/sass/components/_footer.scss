@@ -1,3 +1,6 @@
+footer{
+    background-color: $footer-color;
+}
 .footer {
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +15,6 @@
     padding: 40px 15px;
 
     color: $accent-yellow-color;
-    background-color: $footer-color;
 
     &__logo{
         font-family: "Film P3";
