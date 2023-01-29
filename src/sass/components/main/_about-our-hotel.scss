@@ -206,22 +206,22 @@
 // Slider
 .slider-container {
     margin-top: 32px;
-    width: 510px;
+    width: 530px;
     height: 245px;
-    overflow: hidden;
+    overflow-x: clip;
     transform: translateX(-35%);
 
     @media screen and (min-width: 1024px) {
         position: absolute;
         margin-top: -32px;
-        width: 428px;
+        width: 455px;
         height: 194px;
         transform: none;
     }
 
     @media screen and (min-width: 1280px) {
 
-        width: 548px;
+        width: 575px;
         height: 254px;
         margin-top: -120px;
 
@@ -250,6 +250,7 @@
 
 .slider-image {
     border-radius: 2px;
+    box-shadow: $slider-shadow;
 }
 
 .slider-button {
@@ -288,13 +289,13 @@
 
 .slider-prev:hover,
 .slider-next:hover {
-    fill: #F3C653;
+    fill: $accent-yellow-color;
 
     @media screen and (min-width: 1280px) {
 
         .slider-prev:focus,
         .slider-next:focus {
-            fill: #F3C653;
+            fill: $accent-yellow-color;
         }
     }
 }
