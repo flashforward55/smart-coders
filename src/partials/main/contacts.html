@@ -1,0 +1,64 @@
+<div class="container contacts">
+    <div class="contacts__div-first">
+    <a href="./index.html" class="contacts__logo">Mimiho</a>
+    <p class="contacts__descr">Ресторанно-готельний комплекс</p>
+    <address>
+        <ul class="list address__list">
+            <li class="address__item address__item-first"><span class="address__title">Ресторан</span>
+                <a href="tel:+380955559533" class="address__link address__tel">
+                    <svg width="24" height="24" class="address__svg-phone">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                    <span class="span">095 555 95 33</span>
+                </a>
+            </li>
+            <li class="address__item address__item-second"><span class="address__title">Готель</span>
+                <div class="address__item-tel-plus-tel">
+                    <a href="tel:+380668491089" class="address__link address__link-svg-plus-tel">
+                        <svg width="24" height="24" class="address__svg-phone">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                        <span class="address__span-first">066 849 10 89</span>
+                    </a>
+                    <a href="tel:+38067 275 85 40"class="address__link">067 275 85 40</a>
+                    </div>
+            </li>
+            <li class="address__item-map">
+            <a href="" class="address__link address__link-map">
+                <svg class="address__svg-location"  width="24" height="24">
+                    <use href="./images/icons.svg#icon-point-bigger"></use>
+                </svg>
+                <p>Україна, м. Полтава,<br> вул. Маршала Бірюзова, 15</p> 
+            </a>
+            </li>
+        </ul>
+    </address>
+    </div>  
+       
+            
+    <div class="contacts__div-second">           
+    <picture >
+        <!--Картинка для desktop -->
+        <source
+            srcset="./images/contacts/map-desk.jpg 1x, ./images/contacts/map-desk@2x.jpg 2x"
+            media="(min-width: 1200px)"
+            class="contacts__img"
+         />
+        <!-- Картинка для tablet -->
+        <source
+            srcset="./images/contacts/map-tab.jpg 1x, ./images/contacts/map-tab@2x.jpg 2x"
+            media="(min-width: 768px)"
+            class="contacts__img"
+        />  
+        <!-- Картинка для mobile -->
+        <img
+            srcset="./images/contacts/map-mob.jpg 1x, ./images/contacts/map-mob@2x.jpg 2x"
+            src="./images/contacts/map-mob.jpg"
+            alt="Мапа"
+            class="contacts__img"
+            width="384px"
+        />
+    </picture>
+    </div> 
+</div>
+        
