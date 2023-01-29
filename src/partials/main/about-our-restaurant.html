@@ -1,0 +1,90 @@
+<section class="restaurant-description" data-slider="team-slider">
+    <div class="restaurant-description__container">
+        <h2 class="visually-hidden">Про наш ресторан</h2>
+        <h3 class="restaurant-description__title">Amet minim mollit non</h3>
+        <a class="logo restaurant-description__logo link" href="#">Mimino</a>
+        <ul class="list restaurant-description__list">
+            <li class="restaurant-description__item">
+                <div class="restaurant-description__control restaurant-description__control--wood">
+                    <p class="restaurant-description__meta restaurant-description__meta--grey">Amet minim mollit
+                        non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                        officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <img class="restaurant-description__image restaurant-description__image--wood"
+                        src="/src/images/main-page/about-restaurant/desktop/about-our-restaurant-wood-desktop-@1x.jpg"
+                        srcset="/src/images/main-page/about-restaurant/desktop/about-our-restaurant-wood-desktop-@1x.jpg 1x, /src/images/main-page/about-restaurant/desktop/about-our-restaurant-wood-desktop-@2x.jpg 2x"
+                        alt="Зала ресторану з інтер'єром у дерев'яному стилі">
+                </div>
+            </li>
+            <li class="restaurant-description__item">
+                <div class="restaurant-description__control restaurant-description__control--chess">
+                    <img class="restaurant-description__image restaurant-description__image--chess"
+                        src="/src/images/main-page/about-restaurant/desktop/about-our-restaurant-chess-desktop-@1x.jpg"
+                        srcset="/src/images/main-page/about-restaurant/desktop/about-our-restaurant-chess-desktop-@1x.jpg 1x, /src/images/main-page/about-restaurant/desktop/about-our-restaurant-chess-desktop-@2x.jpg 2x"
+                        alt="Зала ресторану з французькими вікнами">
+                    <p class="restaurant-description__meta restaurant-description__meta--color">Amet minim
+                        mollit non deserunt ullamco est
+                        sit aliqua dolor do amet sint. Velit officia consequat duis enimvelit
+                        mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </li>
+        </ul>
+
+        <div class="container-slider">
+            <div class="slider">
+                <div class="slider__line">
+                    <img class="slider__image"
+                        src="./images/main-page/about-restaurant/desktop/about-our-restaurant-glass-desktop-@1x.jpg"
+                        alt="Бокал вина у руці за столиком у ресторані" srcset="/src/images/main-page/about-restaurant/desktop/about-our-restaurant-glass-desktop-@1x.jpg 1x,
+                        /src/images/main-page/about-restaurant/desktop/about-our-restaurant-glass-desktop-@2x.jpg 2x">
+                    <img class="slider__image"
+                        src="./images/main-page/about-restaurant/desktop/about-our-restaurant-serving-desktop-@1x.jpg"
+                        alt="Сервірування столу у ресторані" srcset="/src/images/main-page/about-restaurant/desktop/about-our-restaurant-serving-desktop-@1x.jpg 1x,
+                        /src/images/main-page/about-restaurant/desktop/about-our-restaurant-serving-desktop-@2x.jpg 2x">
+                    <img class="slider__image"
+                        src="./images/main-page/about-restaurant/desktop/about-our-restaurant-showcase-desktop-@1x.jpg"
+                        alt="Вітрина-бар" srcset="/src/images/main-page/about-restaurant/desktop/about-our-restaurant-showcase-desktop-@1x.jpg 1x,
+                        /src/images/main-page/about-restaurant/desktop/about-our-restaurant-showcase-desktop-@2x.jpg 2x">
+                    <img class="slider__image"
+                        src="./images/main-page/about-restaurant/desktop/about-our-restaurant-dishes-desktop-@1x.jpg"
+                        alt="Накритий стіл зі стравами на двох" srcset="/src/images/main-page/about-restaurant/desktop/about-our-restaurant-dishes-desktop-@1x.jpg 1x,
+                        /src/images/main-page/about-restaurant/desktop/about-our-restaurant-dishes-desktop-@2x.jpg 2x">
+                </div>
+            </div>
+            <div class="slider__button-control">
+                <button class="slider-but slider__prev">
+                    <svg width="32" height="32">
+                        <use href="./images/icons.svg#clic-arrow-left"></use>
+                    </svg>
+                </button>
+                <button class="slider-but slider__next">
+                    <svg width="32" height="32">
+                        <use href="./images/icons.svg#clic-arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let offset = 0; //зміщення від лівого краю
+            const sliderLine = document.querySelector('.slider__line');
+
+            document.querySelector('.slider__prev').addEventListener('click', function () {
+                offset = offset + 294; // offset += 254;
+                if (offset > 882) {
+                    offset = 0;
+                }
+                sliderLine.style.left = -offset + 'px';
+            });
+
+            document.querySelector('.slider__next').addEventListener('click', function () {
+                offset = offset - 294; // offset -= 254;
+                if (offset < 0) {
+                    offset = 882;
+                }
+                sliderLine.style.left = -offset + 'px';
+            });
+
+    </script>
+</section>
