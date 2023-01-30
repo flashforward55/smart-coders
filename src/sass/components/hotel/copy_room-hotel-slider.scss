@@ -20,75 +20,32 @@
 //   --swiper-theme-color: #007aff;
 // }
 .rooms__slider.swiper {
+  max-width: 548px;
+  margin: 0;
   //   margin-left: auto;
   //   margin-right: auto;
-  //   position: relative;
-  overflow: hidden;
-  //   list-style: none;
-  //   padding: 0;
-  //   /* Fix of Webkit flickering */
-  //   z-index: 1;
-  // }
-  // .swiper-vertical > .swiper-wrapper {
-  //   flex-direction: column;
-
-  // mobile
-  @media screen and (max-width: 1023px) {
-    max-width: 404px;
-  }
-  @media screen and (min-width: 1024px) {
-    max-width: 424px;
-  }
-  @media screen and (min-width: 1280px) {
-    max-width: 548px;
-  }
+  // position: relative;
+  position: static;
+  // overflow: hidden;
+  list-style: none;
+  padding: 0;
+  /* Fix of Webkit flickering */
+  z-index: 1;
 }
-.rooms__slider-wrapper.swiper-wrapper {
-  //   position: relative;
-  // width: 100%;
-  // height: 100%;
-  //   z-index: 1;
-  //   display: flex;
-  //   transition-property: transform;
-  // box-sizing: content-box;
+// .swiper-vertical > .swiper-wrapper {
+//   flex-direction: column;
+// }
+.rooms__slider-wripper.swiper-wrapper {
+  // overflow: hidden;
+  // position: relative;
+  position: static;
+  width: 100%;
+  height: 100%;
+  // z-index: 1;
   display: flex;
-  // tablet
-
-  @media screen and (min-width: 1024px) {
-    // gap: 40px;
-    margin-bottom: 32px;
-  }
-
-  // desctop
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 40px;
-  }
+  transition-property: transform;
+  box-sizing: content-box;
 }
-.rooms__slider-wrapper--double.swiper-wrapper {
-  // mobile
-  @media screen and (max-width: 1023px) {
-    position: absolute;
-    // transform: translateX(-135px);
-    z-index: 10;
-    top: -214px;
-    left: -135px;
-
-    // min-width: 404px;
-    // gap: 16px;
-  }
-}
-.rooms__slider-wrapper--triple.swiper-wrapper {
-  // mobile
-  @media screen and (max-width: 1023px) {
-    position: absolute;
-    // transform: translateX(-135px);
-    z-index: 10;
-    right: -135px;
-    // min-width: 404px;
-    // gap: 16px;
-  }
-}
-
 // .swiper-android .swiper-slide,
 // .swiper-wrapper {
 //   transform: translate3d(0px, 0, 0);
@@ -99,25 +56,24 @@
 // .swiper-pointer-events.swiper-vertical {
 //   touch-action: pan-x;
 // }
-.rooms__slider-slide.swiper-slide {
-  display: block;
-  margin-right: 10px;
-  flex-shrink: 0;
-  width: 100%;
-  height: 100%;
-  // position: relative;
-  // transition-property: transform;
 
+.rooms__slider-slide.swiper-slide {
+  flex-shrink: 0;
+  // width: 100%;
+  // height: 100%;
+  // position: relative;
+  position: static;
+  // transition-property: transform;
   overflow: hidden;
-  max-width: 194px;
+  width: 194px;
   height: 194px;
   border-radius: 2px;
 
   background-color: $img-background-color;
-  // box-shadow: $small-img-thumb-shadow;
+  box-shadow: $small-img-thumb-shadow;
 
   @media screen and (min-width: 1280px) {
-    max-width: 254px;
+    width: 254px;
     height: 254px;
   }
 }
@@ -138,7 +94,7 @@
 //   -webkit-backface-visibility: hidden;
 //   backface-visibility: hidden;
 // }
-//!! /* 3D Effects */
+// /* 3D Effects */
 // .swiper-3d,
 // .swiper-3d.swiper-css-mode .swiper-wrapper {
 //   perspective: 1200px;
@@ -181,7 +137,8 @@
 // .swiper-3d .swiper-slide-shadow-bottom {
 //   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 // }
-//!! /* CSS Mode */
+
+//! CSS Mode */
 // .swiper-css-mode > .swiper-wrapper {
 //   overflow: auto;
 //   scrollbar-width: none;
@@ -246,7 +203,7 @@
 //   height: var(--swiper-virtual-size);
 // }
 // :root {
-//!!   --swiper-navigation-size: 44px;
+//   --swiper-navigation-size: 44px;
 //   /*
 //   --swiper-navigation-color: var(--swiper-theme-color);
 //   */
@@ -257,6 +214,10 @@
   gap: 32px;
   justify-content: flex-start;
 
+  &--triple {
+    justify-content: flex-end;
+  }
+
   // mobile
   @media screen and (max-width: 1023px) {
     margin-bottom: 20px;
@@ -265,29 +226,25 @@
   // tablet + desctop
   @media screen and (min-width: 1024px) {
     justify-content: flex-end;
-  }
-}
-.rooms__slider-btns--triple.swiper-btns {
-  justify-content: flex-end;
 
-  // tablet + desctop
-  @media screen and (min-width: 1024px) {
-    justify-content: flex-start;
+    &--triple {
+      justify-content: flex-start;
+    }
   }
 }
 
 .rooms__slider-btn.swiper-button-prev,
 .rooms__slider-btn.swiper-button-next {
-  //   position: absolute;
+  position: static;
   //   top: 50%;
   //   width: calc(var(--swiper-navigation-size) / 44 * 27);
   //   height: var(--swiper-navigation-size);
   //   margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
-  //   z-index: 10;
+  z-index: 20;
   //   cursor: pointer;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   //   color: var(--swiper-navigation-color, var(--swiper-theme-color));
 
   width: 32px;
@@ -301,16 +258,14 @@
     color: $accent-yellow-color;
   }
 }
+
 .rooms__slider-btn.swiper-button-prev.swiper-button-disabled,
 .rooms__slider-btn.swiper-button-next.swiper-button-disabled {
-  // opacity: 0.35;
-  // cursor: auto;
-  // pointer-events: none;
-
   cursor: pointer;
   pointer-events: auto;
 
   color: $black-color;
+  // opacity: 1;
 
   @include transition(color);
 
@@ -319,7 +274,6 @@
     color: $accent-yellow-color;
   }
 }
-
 // .swiper-button-prev.swiper-button-hidden,
 // .swiper-button-next.swiper-button-hidden {
 //   opacity: 0;
@@ -330,18 +284,10 @@
 // .swiper-navigation-disabled .swiper-button-next {
 //   display: none !important;
 // }
-
 .rooms__slider-btn.swiper-button-prev:after,
 .rooms__slider-btn.swiper-button-next:after {
   display: none;
-  //   font-family: swiper-icons;
-  //   font-size: var(--swiper-navigation-size);
-  //   text-transform: none !important;
-  //   letter-spacing: 0;
-  //   font-variant: initial;
-  //   line-height: 1;
 }
-
 // .swiper-button-prev,
 // .swiper-rtl .swiper-button-next {
 //   left: 10px;
@@ -376,7 +322,7 @@
 //   --swiper-pagination-bullet-vertical-gap: 6px;
 //   */
 // }
-//!! .swiper-pagination {
+// .swiper-pagination {
 //   position: absolute;
 //   text-align: center;
 //   transition: 300ms opacity;

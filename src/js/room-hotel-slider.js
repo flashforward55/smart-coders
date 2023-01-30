@@ -62,12 +62,12 @@ function swiperSlider() {
             spaceBetween: 16,
           },
           // when window width is >= 768px
-          768: {
+          1024: {
             slidesPerView: 2,
             spaceBetween: 40,
           },
           // when window width is >= 1200px
-          1200: {
+          1280: {
             slidesPerView: 2,
             spaceBetween: 40,
           },
