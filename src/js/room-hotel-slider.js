@@ -60,16 +60,19 @@ function swiperSlider() {
           320: {
             slidesPerView: 2,
             spaceBetween: 16,
+            loop: true,
           },
           // when window width is >= 768px
           1024: {
             slidesPerView: 2,
             spaceBetween: 40,
+            loop: true,
           },
           // when window width is >= 1200px
           1280: {
             slidesPerView: 2,
             spaceBetween: 40,
+            loop: true,
           },
         },
       });

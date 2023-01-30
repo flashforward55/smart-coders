@@ -22,7 +22,7 @@
 .rooms__slider.swiper {
   //   margin-left: auto;
   //   margin-right: auto;
-  //   position: relative;
+  // position: relative;
   overflow: hidden;
   //   list-style: none;
   //   padding: 0;
@@ -99,15 +99,8 @@
 // .swiper-pointer-events.swiper-vertical {
 //   touch-action: pan-x;
 // }
-.rooms__slider-slide.swiper-slide {
-  display: block;
-  margin-right: 10px;
-  flex-shrink: 0;
-  width: 100%;
-  height: 100%;
-  // position: relative;
-  // transition-property: transform;
 
+.swiper-inner {
   overflow: hidden;
   max-width: 194px;
   height: 194px;
@@ -121,6 +114,16 @@
     height: 254px;
   }
 }
+
+.rooms__slider-slide.swiper-slide {
+  display: inline-block;
+  flex-shrink: 0;
+  // width: 100%;
+  // height: 100%;
+  // position: relative;
+  // transition-property: transform;
+}
+
 // .swiper-slide-invisible-blank {
 //   visibility: hidden;
 // }
