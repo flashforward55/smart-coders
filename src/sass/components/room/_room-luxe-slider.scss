@@ -40,6 +40,15 @@
     position: absolute;
     left: 0;
 
+    @media screen and (max-width: 413px) {
+      letter-spacing: .05em;
+      font-size: 10px;
+      line-height: 1;
+      top: 355px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
     @media screen and (min-width: 414px) {
       top: 483px;
       margin-left: 15px;
@@ -64,6 +73,11 @@
     font-weight: 700;
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 413px) {
+      margin-bottom: 10px;
+    }
+
 
     @media screen and (min-width: 414px) {
       font-size: 28px;
@@ -93,6 +107,10 @@
   }
 
   &__text {
+    @media screen and (max-width: 413px) {
+      margin-bottom: 10px;
+    }
+
     color: #ffffff;
     text-align: left;
 
@@ -154,10 +172,14 @@
     @media screen and (min-width: 1280px) {}
   }
 
-  &__address-link {
-    display: flex;
-    align-items: center;
-  }
+  // &__address-link {
+  //   @media screen and (max-width: 413px) {
+  //     font-size: 10px;
+  //   }
+
+  //   display: flex;
+  //   align-items: center;
+  // }
 
   &__soc-icon {
     fill: rgba(243, 198, 83, 0.7);
@@ -219,6 +241,12 @@
   }
 
   &__address-link {
+    @media screen and (max-width: 413px) {
+      font-size: 12px;
+      display: flex;
+    }
+
+
     font-family: 'Montserrat';
     color: #e5e5e5;
     font-size: 16px;
@@ -236,8 +264,12 @@
   }
 
   &__contact {
+
     display: flex;
-    // align-content: center;
+
+    @media screen and (max-width: 413px) {
+      justify-content: space-between;
+    }
 
     @media screen and (min-width: 414px) {
       bottom: 18px;
@@ -258,8 +290,12 @@
   }
 
   &__btn {
+    position: absolute;
+    top: 500px;
+
+
     @media screen and (min-width: 414px) {
-      position: absolute;
+
       right: 73px;
       top: 652px;
     }
@@ -370,3 +406,7 @@
   }
 
 }
+
+// .btn-none {
+
+// }
