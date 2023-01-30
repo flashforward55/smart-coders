@@ -175,6 +175,7 @@
     &__item-thumb {
         background-color: $img-background-color;
         margin-right: 20px;
+        object-fit: cover;
 
         @media screen and (min-width: 1024px) {
             margin-right: 34px;
@@ -193,10 +194,6 @@
             max-width: 270px;
         }
     }
-
-    &-swiper-slide{
-        object-fit: cover;
-    } 
 
     &__btn-arrow {
         display: flex;
