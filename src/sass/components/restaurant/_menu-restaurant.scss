@@ -9,11 +9,10 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 1.16;
-
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 
     @media screen and (min-width:1024px) {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 }
 
@@ -35,6 +34,11 @@
 .table {
     table-layout: fixed;
     width: 100%;
+    margin-bottom: 16px;
+    
+    @media screen and (min-width:1024px) {
+        margin-bottom: 20px;
+    }
 
     &__title {
         font-family: 'Times New Roman';
@@ -43,11 +47,10 @@
         font-size: 20px;
         line-height: 1.15;
         text-align: start;
-        margin-top: 16px;
         margin-bottom: 16px;
 
         @media screen and (min-width:1024px) {
-            margin-top: 20px;
+            
             margin-bottom: 20px;
         }
 
@@ -58,6 +61,15 @@
     }
 
 
+}
+.table:last-child {
+    @media screen and (min-width:1024px) {
+        margin-bottom: 0;
+    }
+    
+}
+.table--last {
+    margin-bottom: 0;
 }
 
 // Удалить перед пушем
