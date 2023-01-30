@@ -83,8 +83,6 @@
       font-size: 28px;
       line-height: 32px;
       letter-spacing: 0.05em;
-
-      // width: 325px;
     }
 
     @media screen and (min-width: 1024px) {
@@ -103,7 +101,6 @@
 
   &__subtitle {
     text-transform: uppercase;
-
   }
 
   &__text {
@@ -138,7 +135,6 @@
 
   &__soc-list {
 
-    // border: 2px solid #971414;
     @media screen and (min-width: 414px) {
       margin-right: 42px;
       display: block;
@@ -159,27 +155,15 @@
     @media screen and (min-width: 414px) {
 
       margin-bottom: 6px;
-
-
       display: block;
     }
 
     @media screen and (min-width: 1024px) {
       margin-right: 23px;
-
     }
 
     @media screen and (min-width: 1280px) {}
   }
-
-  // &__address-link {
-  //   @media screen and (max-width: 413px) {
-  //     font-size: 10px;
-  //   }
-
-  //   display: flex;
-  //   align-items: center;
-  // }
 
   &__soc-icon {
     fill: rgba(243, 198, 83, 0.7);
@@ -206,9 +190,6 @@
       position: absolute;
       bottom: 628px;
       left: 175px;
-
-
-
     }
 
     @media screen and (min-width: 1024px) {
@@ -356,8 +337,6 @@
   background-color: rgba(0, 0, 0, 0.65);
   background-repeat: no-repeat;
 
-
-  // background-image: url('../images/arrow-right.svg');
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='38' height='22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M27.115.482 25.347 2.25l7.5 7.5H.25v2.5h32.597l-7.5 7.5 1.768 1.767L37.633 11 27.115.482Z' fill='%23F3C653'/%3e%3c/svg%3e ");
   background-position: center;
 
@@ -386,7 +365,6 @@
   background-color: rgba(0, 0, 0, 0.65);
   background-repeat: no-repeat;
 
-  // background-image: url('../images/arrow-left.svg');
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='38' height='22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M37.854 9.75H5.257l7.5-7.5L10.989.482.472 11l10.517 10.517 1.768-1.767-7.5-7.5h32.597v-2.5Z' fill='%23F3C653'/%3e%3c/svg%3e");
 
   background-position: center;
@@ -406,7 +384,3 @@
   }
 
 }
-
-// .btn-none {
-
-// }
