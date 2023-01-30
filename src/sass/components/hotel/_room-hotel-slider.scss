@@ -37,7 +37,7 @@
     max-width: 404px;
   }
   @media screen and (min-width: 1024px) {
-    max-width: 424px;
+    max-width: 428px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 548px;
@@ -102,7 +102,7 @@
 
 .swiper-inner {
   overflow: hidden;
-  max-width: 194px;
+  min-width: 194px;
   height: 194px;
   border-radius: 2px;
 
@@ -110,7 +110,7 @@
   // box-shadow: $small-img-thumb-shadow;
 
   @media screen and (min-width: 1280px) {
-    max-width: 254px;
+    min-width: 254px;
     height: 254px;
   }
 }
