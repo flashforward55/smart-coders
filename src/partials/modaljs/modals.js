@@ -1,6 +1,5 @@
 !function (e) { "function" != typeof e.matches && (e.matches = e.msMatchesSelector || e.mozMatchesSelector || e.webkitMatchesSelector || function (e) { for (var t = this, o = (t.document || t.ownerDocument).querySelectorAll(e), n = 0; o[n] && o[n] !== t;)++n; return Boolean(o[n]) }), "function" != typeof e.closest && (e.closest = function (e) { for (var t = this; t && 1 === t.nodeType;) { if (t.matches(e)) return t; t = t.parentNode } return null }) }(window.Element.prototype);
 
-
 document.addEventListener('DOMContentLoaded', function () {
 
     /* Записываем в переменные массив элементов-кнопок и подложку.
@@ -31,6 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
                подложке и окну чтобы показать их. */
             modalElem.classList.add('active');
             overlay.classList.add('active');
+            const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+            const body = document.body;
+            body.style.overflow = 'hidden';
+            // body.style.top = `-${scrollY}`;
         }); // end click
 
     }); // end foreach
@@ -43,6 +46,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             parentModal.classList.remove('active');
             overlay.classList.remove('active');
+            const body = document.body;
+            const scrollY = body.style.top;
+            body.style.overflow = '';
+            // body.style.top = '';
+            // window.scrollTo(0, parseInt(scrollY || '0') * -1);
         });
 
     }); // end foreach
@@ -62,9 +70,10 @@ document.addEventListener('DOMContentLoaded', function () {
     overlay.addEventListener('click', function () {
         document.querySelector('.modal.active').classList.remove('active');
         this.classList.remove('active');
+        const body = document.body;
+        const scrollY = body.style.top;
+        body.style.overflow = '';
     });
-
-
 
 
 }); // end ready
