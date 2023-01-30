@@ -158,7 +158,7 @@
   padding: 18px 38px;
   margin-bottom: 32px;
 
-  min-width: 384px;
+
   color: $white-color;
 
   font-family: 'Montserrat';
@@ -177,6 +177,10 @@
   &:focus {
     color: $black-color;
     background-color: $accent-yellow-color;
+  }
+
+  @media screen and (min-width: 414px) {
+    min-width: 384px;
   }
 
   @media screen and (min-width: 1024px) {
