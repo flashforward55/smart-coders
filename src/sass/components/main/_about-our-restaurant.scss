@@ -9,6 +9,8 @@
     padding-bottom: 20px;
     margin: 0 auto;
     width: 414px;
+    
+    
 
     @media screen and (min-width: 414px) {
         width: 414px;
@@ -20,6 +22,7 @@
         padding-left: 60px;
         padding-top: 120px;
         padding-bottom: 32px;
+        margin-bottom: -329px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -27,6 +30,7 @@
         padding-right: 85px;
         padding-left: 85px;
         padding-bottom: 50px;
+        margin-bottom: -447px;
     }
 }
 
@@ -219,7 +223,7 @@
     gap: 25px;
     position: relative;
     left: 0;
-    transition: all ease 1s;
+    transition: all ease 2s;
 
     @media screen and (min-width: 1280px) {
         gap: 40px;
@@ -230,6 +234,7 @@
     border-radius: 2px;
     background: $img-background-color;
     width: 245px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 
     @media screen and (min-width: 1024px) {
         width: 194px;
