@@ -19,7 +19,7 @@
     @media screen and (min-width:1024px){
         width: 1024px;
         text-align: right;
-        padding-bottom: 0;
+        padding-top: 48px;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/main-page/details-of-our-hotel/homepage-details-hotel-bg-tablet-@1x.jpg');
         @media (min-device-pixel-ratio:2),
         (min-resolution:192dpi),
@@ -125,7 +125,7 @@
         padding-right: 0;
         display:block;
         position: absolute;
-        bottom: 110px;
+        bottom: 75px;
         right: 40px;
     }
 }
@@ -142,23 +142,23 @@
     }
 }
 .details-of-our-hotel__list{
-    // position: relative;
     display:flex;
+    gap: 10px;
     flex-direction: row-reverse;
     width: 1270px;
     margin-bottom: 24px;
     margin-right: 40px;
     list-style: none;
+    transition: all ease 2s;
     @media screen and (min-width:1024px){
         margin-bottom: 32px;
         margin-right: 30px;
     }
 }
 .details-of-our-hotel__item{
-    margin-left: 20px;
     width: 359px;
     @media screen and (min-width:1024px){
-        width: 665px;
+        width: 400px;
     }
 }
 .details-of-our-hotel__image{
@@ -172,7 +172,9 @@
     justify-content: flex-end;
     margin-right: 40px;
     margin-bottom: 40px;
-
+    @media screen and (min-width:1024px){
+        margin-bottom: 0;
+    }
 }
 .arrow{
     background-color: transparent;
