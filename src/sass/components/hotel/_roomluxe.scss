@@ -1,19 +1,51 @@
-.roomluxe {
+.roomluxe__container {
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 32px;
   padding-bottom: 32px;
 
+  background: $bg-lemon-color;
+
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+
+
+  @media screen and (min-width: 414px) {
+    max-width: 414px;
+  }
+
   @media screen and (min-width: 1024px) {
-    padding-top: 64px;
+    max-width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-top: 62px;
     padding-bottom: 40px;
   }
 
   @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
     padding-top: 72px;
   }
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .roomluxe__note {
-  // @extend %list;
+  list-style: none;
   margin-bottom: 32px;
 
   @media screen and (min-width: 1024px) {
@@ -111,7 +143,7 @@
 }
 
 .roomluxe__roster {
-  // @extend %list;
+  list-style: none;
   margin-bottom: 32px;
 
   @media screen and (min-width: 1024px) {
@@ -179,7 +211,7 @@
   }
 }
 
-// Фото номеру (ванна та чашка)
+// Фото номеру (ванна та чашка) - позиціонування кнопок
 .roomluxe__thumb {
 
   @media screen and (min-width: 1024px) {
@@ -187,81 +219,10 @@
   }
 }
 
-.roomluxe-foto__thumb {
-  position: relative;
-}
-
-.roomluxe-foto {
-  // @extend %list;
-  position: relative;
-  bottom: 0;
-  left: -15px;
-
-  display: flex;
-  margin-bottom: 20px;
-
-  @media screen and (min-width: 1024px) {
-    margin-bottom: 32px;
-    left: 0;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 40px;
-  }
-}
-
-.roomluxe-foto__item {
-  margin-right: 16px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  @media screen and (min-width: 1024px) {
-    margin-right: 40px;
-  }
-}
-
-// SVG стрілочки
-
-.roomluxe-icon {
-  // @extend %list;
-  display: flex;
-  margin-bottom: 20px;
-
-  @media screen and (min-width: 1024px) {
-    margin-bottom: 0;
-    margin-left: 329px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-left: 452px;
-  }
-}
-
-.roomluxe-icon__item {
-  margin-right: 32px;
-  fill: currentColor;
-  color: $black-color;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  @media screen and (min-width: 1280px) {
-    transition: color 250ms $cubic-bezier;
-
-    &:hover,
-    &:focus {
-      color: $accent-yellow-color;
-    }
-  }
-}
-
 // Посилання та кнопка
 
 .roomluxe-filters {
-  // @extend %list;
+  list-style: none;
   text-align: center;
 }
 
@@ -281,6 +242,11 @@
     right: 0;
     bottom: 0;
     transform: translateY(-100px);
+  }
+
+  @media screen and (min-width: 1280) {
+    position: absolute;
+    transform: translateY(-150px);
   }
 }
 
@@ -343,14 +309,102 @@
 
 // Радіуси та тіні на фото
 
-.roomluxe__room {
-  border-radius: 2px;
-  background: $img-background-color;
-  box-shadow: $small-img-thumb-shadow;
-}
-
 .roomluxe__apartment {
   border-radius: 2px;
   background: $img-background-color;
   box-shadow: $large-img-thumb-shadow;
+}
+
+// СЛАЙДЕР
+
+.roomluxe-slides {
+  list-style: none;
+
+  position: relative;
+  bottom: 0;
+  left: -155px;
+
+  transition: 1.5s all;
+  padding-left: 0;
+
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 20px;
+
+  @media (min-width: 1024px) {
+    margin-right: 355px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-right: 435px;
+  }
+}
+
+.roomluxe-slides__slide {
+  margin-left: 16px;
+
+  @media (min-width: 1024px) {
+    margin-left: 40px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-left: 50px;
+  }
+}
+
+.roomluxe-slides__img {
+  max-width: 194px;
+  border-radius: 2px;
+  background: $img-background-color;
+  box-shadow: $small-img-thumb-shadow;
+
+  @media (min-width: 1024px) {
+    width: 194px;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 254px;
+    width: 254px;
+  }
+}
+
+// SVG стрілочки
+
+.roomluxe-slides__grup {
+  display: flex;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 100px;
+
+  @media (min-width: 1024px) {
+    margin-top: 32px;
+    margin-bottom: 0;
+    margin-left: 325px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 40px;
+    margin-left: 425px;
+  }
+}
+
+.roomluxe-slides__left {
+  margin-right: 32px;
+  fill: currentColor;
+  color: $black-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: $accent-yellow-color;
+  }
+}
+
+.roomluxe-slides__right {
+
+  &:hover,
+  &:focus {
+    fill: $accent-yellow-color;
+  }
 }
