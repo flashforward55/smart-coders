@@ -1,7 +1,7 @@
 .container-modal__price {
   width: 100%;
   max-width: 310px;
-  padding: 60px 15px;
+  padding: 35px 15px;
   @media screen and (min-width: 414px) {
     max-width: 414px;
     height: 572px;
@@ -16,13 +16,18 @@
 
 .modal-price__title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
   color: $black-color;
+  @media screen and (min-width: 414px) {
+    font-size: 24px;
+    line-height: 1.16;
+    margin-bottom: 40px;
+  }
   @media screen and (min-width: 1024px) {
     font-size: 32px;
     line-height: 1.15;
@@ -30,15 +35,20 @@
 }
 
 .modal-price__subtitle {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.16;
   letter-spacing: 0.05em;
 
   color: $modal-gray-text-color;
+  @media screen and (min-width: 414px) {
+    font-size: 24px;
+    line-height: 1.16;
+    margin-bottom: 28px;
+  }
 }
 
 .modal-price__category {
@@ -50,6 +60,10 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: $brown-color;
+  @media screen and (min-width: 414px) {
+    font-size: 14px;
+    line-height: 1.25;
+  }
 }
 
 .price-night {
@@ -70,7 +84,7 @@
   &__select {
     width: 100%;
     max-width: 384px;
-    height: 54px;
+    height: 44px;
     padding-left: 12px;
     appearance: none;
     background-color: transparent;
@@ -87,6 +101,10 @@
     letter-spacing: 0.05em;
 
     color: $modal-gray-text-color;
+
+    @media screen and (min-width: 414px) {
+      height: 54px;
+    }
     @media screen and (min-width: 1024px) {
       width: 288px;
       height: 64px;
@@ -99,17 +117,20 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $brown-color;
+    @media screen and (min-width: 414px) {
+      font-size: 16px;
+    }
   }
 }
 
 .drop-price::before {
   content: '';
   position: absolute;
-  top: 27px;
+  top: 22px;
   right: 15px;
   width: 17px;
   height: 3px;
@@ -118,6 +139,9 @@
   z-index: 10;
   transform: rotate(-45deg);
   transition: 500ms;
+  @media screen and (min-width: 414px) {
+    top: 27px;
+  }
   @media screen and (min-width: 1024px) {
     top: 32px;
   }
@@ -125,7 +149,7 @@
 .drop-price::after {
   content: '';
   position: absolute;
-  top: 27px;
+  top: 22px;
   right: 25px;
   width: 17px;
   height: 3px;
@@ -134,6 +158,9 @@
   z-index: 10;
   transform: rotate(45deg);
   transition: 500ms;
+  @media screen and (min-width: 414px) {
+    top: 27px;
+  }
   @media screen and (min-width: 1024px) {
     top: 32px;
   }
@@ -149,7 +176,7 @@
 .total-grn {
   width: 100%;
   max-width: 384px;
-  height: 54px;
+  height: 44px;
   padding-left: 12px;
   appearance: none;
   background-color: transparent;
@@ -166,6 +193,9 @@
   letter-spacing: 0.05em;
 
   color: $modal-gray-text-color;
+  @media screen and (min-width: 414px) {
+    height: 54px;
+  }
   @media screen and (min-width: 1024px) {
     width: 288px;
     height: 64px;
@@ -189,8 +219,11 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: $brown-color;
+  @media screen and (min-width: 414px) {
+    font-size: 16px;
+  }
 }
