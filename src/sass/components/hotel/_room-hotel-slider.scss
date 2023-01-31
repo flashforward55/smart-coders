@@ -57,20 +57,6 @@
     margin-bottom: 40px;
   }
 }
-.rooms__slider-wrapper--double.swiper-wrapper {
-  // mobile
-  @media screen and (max-width: 1023px) {
-    top: -214px;
-    left: -135px;
-  }
-}
-.rooms__slider-wrapper--triple.swiper-wrapper {
-  // mobile
-  @media screen and (max-width: 1023px) {
-    top: -214px;
-    right: -135px;
-  }
-}
 
 .swiper-inner {
   overflow: hidden;
@@ -91,6 +77,7 @@
 }
 
 .rooms__slider-slide.swiper-slide {
+  display: block;
   flex-shrink: 0;
 }
 
