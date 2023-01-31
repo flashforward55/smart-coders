@@ -94,6 +94,9 @@
 .kitchen-card-left {
   display: flex;
   align-items: center;
+  @media (max-width: 355px) {
+    flex-wrap: wrap;
+  }
   @media (min-width: 1024px) {
     margin-top: -60px;
   }
@@ -107,6 +110,9 @@
     background: $img-background-color;
     border-radius: 2px;
     box-shadow: $large-img-thumb-shadow;
+    @media (max-width: 355px) {
+      margin-bottom: 10px;
+    }
     @media (min-width: 1024px) {
       margin-right: 48px;
       max-width: 350px;
@@ -134,19 +140,22 @@
 }
 .carusel {
   overflow-x: clip;
-  width: 350px;
+  max-width: 350px;
   margin-left: auto;
   margin-top: 24px;
   margin-right: -15px;
   padding-left: 18px;
+  @media (max-width: 355px) {
+    max-width: 315px;
+  }
   @media (min-width: 1024px) {
     margin-right: 0px;
-    width: 468px;
+    max-width: 468px;
     margin-top: -30px;
     padding-left: 18px;
   }
   @media (min-width: 1280px) {
-    width: 584px;
+    max-width: 584px;
     margin-top: -145px;
     margin-right: -40px;
     padding-left: 18px;
