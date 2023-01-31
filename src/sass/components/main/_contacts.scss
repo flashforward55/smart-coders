@@ -26,12 +26,19 @@
         line-height: 1.25;
         letter-spacing: 0.02em;
     }
-    &__img{
+    &__map{
+       
         margin-left: auto;
         margin-right: auto;
 
         box-shadow: 0px 30px 135px 17px #0000004d;
     }
+    @media screen and(max-width:1023px) {
+        &__iframe{
+        height: 220px;
+        }
+    }
+    
     
 
 }
@@ -57,7 +64,7 @@
     &__tel,
     &__item-tel-plus-tel,
     &__item-map{
-        min-width: 260px;   
+        max-width: 261px;   
 
         margin-left: auto; 
 
@@ -171,8 +178,10 @@
             display: flex;
             align-items: flex-end;
         }
-        &__img{
-            min-width: 535px;
+        &__map{
+            width: 535px;
+           
+           
         }
     } 
 
@@ -211,7 +220,7 @@
     .contacts__descr{
         font-size: 20px;
     }
-    .contacts__img{
+    .contacts__map{
         min-width: 634px;
     }
 
@@ -219,4 +228,13 @@
     .address__link{
         color: #828282;
     }
+   
+}
+
+@media screen and(max-width: 320px){
+    .address__item-tel-plus-tel{
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 260px;
+    }  
 }
