@@ -198,60 +198,78 @@
 }
 
 .container-slider {
-    width: 331px;
-    overflow: hidden;
+    width: 361px;
+    /*overflow: hidden;*/
+    overflow-x: clip;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
+    margin-bottom: 20px;
 
-    @media screen and (min-width: 1024px) {
-        transform: translateY(-329px);
-        width: 428px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        transform: translateY(-447px);
-        width: 548px;
-    }
-
+@media screen and (min-width: 1024px) {
+    transform: translateY(-329px);
+    width: 458px;
+    margin-bottom: 32px;
 }
 
-.slider {
+@media screen and (min-width: 1280px) {
+    transform: translateY(-447px);
+    width: 578px;
     margin-bottom: 36px;
+}
+
 }
 
 .slider__line {
     display: flex;
-    gap: 25px;
+    gap: 24px;
+    width: 1052px;
     position: relative;
     left: 0;
     transition: all ease 2s;
 
+@media screen and (min-width: 1024px) {
+    gap: 40px;
+    width: 896px;
+}
+
     @media screen and (min-width: 1280px) {
-        gap: 40px;
-    }
+    width: 1136px;
+}
 }
 
 .slider__image {
     border-radius: 2px;
     background: $img-background-color;
-    width: 245px;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: $slider-shadow;
 
-    @media screen and (min-width: 1024px) {
-        width: 194px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        width: 254px;
-    }
+@media screen and (max-width: 1023px) {
+    width: 245px;
+}
 }
 
 .slider__button-control {
     display: flex;
     justify-content: end;
     gap: 36px;
+
+@media screen and (min-width: 1024px) {
+    transform: translateY(-329px);
+}
+
+@media screen and (min-width: 1280px) {
+    transform: translateY(-447px);
+}
 }
 
 .slider-but {
-    background: none;
+    cursor: pointer;
+    background-color: transparent;
     padding: 0;
+}
+
+.slider-but:hover,
+.slider-but:focus {
+    fill: $accent-yellow-color;
 }
