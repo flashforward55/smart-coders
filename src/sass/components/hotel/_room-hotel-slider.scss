@@ -1,12 +1,15 @@
-.rooms__container {
-  // tablet + desctop
+/* rooms__slider */
+.rooms__slider {
+  margin-bottom: 20px;
+
+  // tablet
   @media screen and (min-width: 1024px) {
-    // &--double-slider {
-    //   margin-left: -20px;
-    // }
-    // &--triple-slider {
-    //   margin-right: -20px;
-    // }
+    margin-bottom: 32px;
+  }
+
+  // desctop
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
   }
 }
 
@@ -46,11 +49,11 @@
   }
 }
 
-.rooms__slider-wrapper.swiper-wrapper {
+.rooms__slider-list.swiper-wrapper {
   display: flex;
 }
 
-.swiper-inner {
+.rooms__slider-img-thumb.swiper-inner {
   overflow: hidden;
   object-fit: contain;
 
@@ -68,7 +71,7 @@
   }
 }
 
-.rooms__slider-slide.swiper-slide {
+.rooms__slider-list-item.swiper-slide {
   display: block;
   flex-shrink: 0;
 }
