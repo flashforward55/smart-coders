@@ -34,11 +34,7 @@
 .table {
     table-layout: fixed;
     width: 100%;
-    margin-bottom: 16px;
     
-    @media screen and (min-width:1024px) {
-        margin-bottom: 20px;
-    }
 
     &__title {
         font-family: 'Times New Roman';
@@ -62,7 +58,14 @@
 
 
 }
-.table:last-child {
+.list-position {
+    margin-bottom: 16px;
+    
+        @media screen and (min-width:1024px) {
+            margin-bottom: 20px;
+        }
+}
+.list-position:last-child {
     @media screen and (min-width:1024px) {
         margin-bottom: 0;
     }
@@ -72,7 +75,7 @@
     margin-bottom: 0;
 }
 
-// Удалить перед пушем
+
 th,
 tr,
 td {
@@ -91,6 +94,7 @@ td {
         font-size: 14px;
         line-height: 1.21;
         letter-spacing: 0.02em;
+        text-align: center;
     }
 
     &__price {
@@ -110,10 +114,13 @@ td {
         font-size: 14px;
         line-height: 1.21;
         letter-spacing: 0.02em;
-        width: 226px;
+        width: 225px;
         text-align: start;
         padding-bottom: 4px;
 
+        @media screen and (min-width:1024px) {
+            width: 226px;
+        }
         @media screen and (min-width:1280px) {
             font-size: 16px;
             line-height: 1.25;
