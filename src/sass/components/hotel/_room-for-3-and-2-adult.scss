@@ -47,6 +47,14 @@
     &:not(:last-child) {
       margin-bottom: 169px;
     }
+
+    &--double-slider {
+      margin-left: -20px;
+    }
+    &--triple-slider {
+      margin-right: -20px;
+    }
+
     // desctop
     @media screen and (min-width: 1280px) {
       &:not(:last-child) {
