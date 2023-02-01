@@ -131,16 +131,16 @@
     </div>
   </div>
   <script>
-    const rew = document.querySelector('.details-of-our-hotel__list').children;
-    const list_length = rew.length;
+    const rw = document.querySelector('.details-of-our-hotel__list').children;
+    const lst_length = rw.length;
     document.querySelector('.details-of-our-hotel__right').addEventListener('click', muv);
     function muv() {
-      for (let i = 0; i < list_length; i++) {
-        if (rew[i].classList == 'details-of-our-hotel__item') {
-          rew[i].classList = 'visually-hidden';
-          if (i == list_length - 1) {
-            for (let i = 0; i < list_length; i++) {
-              rew[i].classList = 'details-of-our-hotel__item';
+      for (let i = 0; i < lst_length; i++) {
+        if (rw[i].classList == 'details-of-our-hotel__item') {
+          rw[i].classList = 'visually-hidden';
+          if (i == lst_length - 1) {
+            for (let i = 0; i < lst_length; i++) {
+              rw[i].classList = 'details-of-our-hotel__item';
             }
           }
           break;
@@ -148,10 +148,10 @@
       }
     }
     document.querySelector('.details-of-our-hotel__left').onclick = function () {
-      for (let i = 0; i < list_length; i++) {
-        if (rew[i].classList == 'details-of-our-hotel__item') {
+      for (let i = 0; i < lst_length; i++) {
+        if (rw[i].classList == 'details-of-our-hotel__item') {
           if (i == 0) break;
-          rew[i - 1].classList = 'details-of-our-hotel__item';
+          rw[i - 1].classList = 'details-of-our-hotel__item';
           break;
         }
       }
