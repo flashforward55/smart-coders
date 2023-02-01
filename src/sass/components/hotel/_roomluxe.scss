@@ -6,10 +6,8 @@
 
   background: $bg-lemon-color;
 
-
   margin-left: auto;
   margin-right: auto;
-
 
   @media screen and (min-width: 414px) {
     max-width: 414px;
@@ -21,7 +19,6 @@
     padding-right: 47px;
     padding-top: 62px;
     padding-bottom: 40px;
-
   }
 
   @media screen and (min-width: 1280px) {
@@ -29,7 +26,6 @@
     padding-left: 85px;
     padding-right: 85px;
     padding-top: 72px;
-
   }
 }
 
@@ -163,6 +159,10 @@
 
   &:last-child {
     margin-left: 140px;
+
+    @media screen and (max-width: 413px) {
+      margin-left: calc(100vw - 274px);
+    }
   }
 
   @media screen and (min-width: 1024px) {
@@ -328,7 +328,7 @@
   left: -90px;
 
   transition: 1.5s all;
-  transition: all ease 1.0s;
+  transition: all ease 1s;
   padding-left: 0;
 
   display: flex;
