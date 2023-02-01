@@ -231,10 +231,18 @@
    
 }
 
-@media screen and(max-width: 320px){
+@media screen and(max-width: 331px){
     .address__item-tel-plus-tel{
     flex-wrap: wrap;
     gap: 10px;
-    max-width: 260px;
+    max-width: 150px;
+   
+    }  
+}
+@media screen and(max-width: 393px){
+    .address__item-tel-plus-tel,
+    .address__tel{
+    font-size: 12px;
+     margin-right: 0;
     }  
 }
