@@ -47,9 +47,21 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper('.mySwiper', {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        // slidesPerGroup: 3,
+        breakpoints: { 
+          0: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 34,
+          },
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 87,
+          }
+        },
+        speed: 500,
         loop: true,
         loopFillGroupWithBlank: true,
         navigation: {
