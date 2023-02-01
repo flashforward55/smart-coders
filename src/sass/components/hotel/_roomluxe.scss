@@ -6,7 +6,7 @@
 
   background: $bg-lemon-color;
 
-  overflow-x: hidden;
+
   margin-left: auto;
   margin-right: auto;
 
@@ -21,6 +21,7 @@
     padding-right: 47px;
     padding-top: 62px;
     padding-bottom: 40px;
+
   }
 
   @media screen and (min-width: 1280px) {
@@ -28,6 +29,7 @@
     padding-left: 85px;
     padding-right: 85px;
     padding-top: 72px;
+
   }
 }
 
@@ -160,7 +162,7 @@
   }
 
   &:last-child {
-    margin-left: 155px;
+    margin-left: 140px;
   }
 
   @media screen and (min-width: 1024px) {
@@ -213,9 +215,11 @@
 
 // Фото номеру (ванна та чашка) - позиціонування кнопок
 .roomluxe__thumb {
+  overflow-x: hidden;
 
   @media screen and (min-width: 1024px) {
     position: relative;
+    overflow-x: hidden;
   }
 }
 
@@ -245,7 +249,6 @@
   }
 
   @media screen and (min-width: 1280) {
-    position: absolute;
     transform: translateY(-150px);
   }
 }
@@ -332,11 +335,11 @@
   flex-direction: row-reverse;
 
   @media (min-width: 1024px) {
-    left: -510px;
+    left: -475px;
   }
 
   @media (min-width: 1280px) {
-    left: -587px;
+    left: -560px;
   }
 }
 
@@ -348,7 +351,7 @@
   }
 
   @media (min-width: 1280px) {
-    margin-left: 50px;
+    margin-left: 40px;
   }
 }
 
@@ -380,12 +383,12 @@
   @media (min-width: 1024px) {
     margin-top: 32px;
     margin-bottom: 0;
-    margin-left: 325px;
+    margin-left: 355px;
   }
 
   @media screen and (min-width: 1280px) {
     margin-top: 40px;
-    margin-left: 425px;
+    margin-left: 450px;
   }
 }
 
