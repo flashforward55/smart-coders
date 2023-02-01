@@ -58,4 +58,8 @@
 
 .btn-modal-submit__cursor {
   cursor: pointer;
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+    max-width: 592px;
+  }
 }
