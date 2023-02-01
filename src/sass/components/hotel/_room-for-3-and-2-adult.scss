@@ -31,7 +31,14 @@
 
 .rooms__container {
   position: relative;
-  margin-bottom: 0;
+
+  // mobile
+  @media screen and (max-width: 1023px) {
+    &:not(:last-child) {
+      margin-bottom: 32px; //для статичних картинок = 246px
+    }
+  }
+
   // tablet
   @media screen and (min-width: 1024px) {
     display: flex;
@@ -56,17 +63,23 @@
 .rooms__text-wrapper {
   // mobile
   @media screen and (max-width: 1023px) {
-    padding-left: 82px;
+    margin-bottom: 30px;
+
+    &--triple {
+      padding-left: 82px;
+    }
   }
 
-  // tablet
-  @media screen and (min-width: 1024px) {
-    padding-right: 17px;
-  }
+  &--triple {
+    // tablet
+    @media screen and (min-width: 1024px) {
+      padding-right: 17px;
+    }
 
-  // desctop
-  @media screen and (min-width: 1280px) {
-    padding-right: 57px;
+    // desctop
+    @media screen and (min-width: 1280px) {
+      padding-right: 57px;
+    }
   }
 }
 
@@ -170,11 +183,6 @@
     font-size: 3.3vw;
   }
 
-  // mobile
-  @media screen and (max-width: 1023px) {
-    margin-bottom: 30px;
-  }
-
   // tablet + desctop
   @media screen and (min-width: 1024px) {
     width: 400px;
@@ -196,11 +204,6 @@
 
   &--double {
     margin-left: auto;
-  }
-
-  // mobile
-  @media screen and (max-width: 1023px) {
-    margin-bottom: 32px; //для статичних картинок = 246px
   }
 
   // tablet
@@ -233,8 +236,26 @@
   }
 }
 
-// .rooms__slider {
-// }
+.rooms__team-slider {
+  //   mobile
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 20px;
+  }
+}
+
+.rooms__slider {
+  margin-bottom: 20px;
+
+  // tablet
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 32px;
+  }
+
+  // desctop
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
 
 .rooms__slider-list {
   display: flex;
