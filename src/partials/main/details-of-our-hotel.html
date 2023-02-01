@@ -130,31 +130,6 @@
       </div>
     </div>
   </div>
-  <!-- first script -->
-  <!-- <script>
-    let ofset = 0;
-    const sliderLn = document.querySelector('.details-of-our-hotel__list');
-    const listEl = document.querySelectorAll('.details-of-our-hotel__image');
-    let wth = listEl[0].clientWidth;
-    let gas = getComputedStyle(sliderLn).gap;
-    gas = parseInt(gas.match(/\d+/));
-    console.log(gas);
-    document.querySelector('.details-of-our-hotel__left').addEventListener('click', function () {
-      ofset = ofset + gas + wth;
-      if (ofset == (wth + gas) * listEl.length) {
-        ofset = 0;
-      }
-      sliderLn.style.marginLeft = -ofset + 'px';
-    });
-
-    document.querySelector('.details-of-our-hotel__right').addEventListener('click', function () {
-      ofset = ofset - (gas + wth);
-      if (ofset <= -(wth + gas)) {
-        ofset = (wth + gas) * (listEl.length - 1);
-      }
-      sliderLn.style.marginLeft = -ofset + 'px';
-    });
-  </script> -->
   <script>
     const rew = document.querySelector('.details-of-our-hotel__list').children;
     const list_length = rew.length;
