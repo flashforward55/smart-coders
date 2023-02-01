@@ -38,7 +38,10 @@
 
 .rooms__slider--triple.swiper {
   // mobile
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 413px) {
+    transform: translateX(calc(100vw - 299px)); //! при vw=414рх =115 => 414-115=299!//
+  }
+  @media screen and (min-width: 414px) and (max-width: 1023px) {
     transform: translateX(115px);
   }
 }
@@ -117,7 +120,7 @@
   @include transition(color);
 
   &:hover,
-  &:focus {
+  &:active {
     color: $accent-yellow-color;
   }
 }
@@ -132,7 +135,7 @@
   @include transition(color);
 
   &:hover,
-  &:focus {
+  &:active {
     color: $accent-yellow-color;
   }
 }
