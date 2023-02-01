@@ -1,14 +1,38 @@
 !function (e) { "function" != typeof e.matches && (e.matches = e.msMatchesSelector || e.mozMatchesSelector || e.webkitMatchesSelector || function (e) { for (var t = this, o = (t.document || t.ownerDocument).querySelectorAll(e), n = 0; o[n] && o[n] !== t;)++n; return Boolean(o[n]) }), "function" != typeof e.closest && (e.closest = function (e) { for (var t = this; t && 1 === t.nodeType;) { if (t.matches(e)) return t; t = t.parentNode } return null }) }(window.Element.prototype);
 
-
 document.addEventListener('DOMContentLoaded', function () {
 
     /* Записываем в переменные массив элементов-кнопок и подложку.
        Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
+    body = document.body;
+    fixBlocks = document.querySelectorAll('.fix-block');
     var modalButtons = document.querySelectorAll('.js-open-modal'),
         overlay = document.querySelector('.js-overlay-modal'),
         closeButtons = document.querySelectorAll('.js-modal-close');
 
+    disableScroll = function () {
+        let paddingOffset = window.innerWidth - document.body.offsetWidth + 'px';
+        let pagePosition = window.scrollY;
+        fixBlocks.forEach((el) => {
+            el.style.paddingRight = paddingOffset;
+        });
+        body.style.paddingRight = paddingOffset;
+        body.classList.add('disable-scroll');
+        body.dataset.position = pagePosition;
+        body.style.top = -pagePosition + 'px';
+    }
+
+    enableScroll = function () {
+        let pagePosition = parseInt(document.body.dataset.position, 10);
+        body.style.top = 'auto';
+        body.classList.remove('disable-scroll');
+        fixBlocks.forEach((el) => {
+            el.style.paddingRight = '0px';
+        });
+        body.style.paddingRight = '0px';
+        window.scroll({ top: pagePosition, left: 0 });
+        body.removeAttribute('data-position');
+    }
 
     /* Перебираем массив кнопок */
     modalButtons.forEach(function (item) {
@@ -34,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }); // end click
 
     }); // end foreach
-
 
     closeButtons.forEach(function (item) {
 
@@ -63,8 +86,6 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.modal.active').classList.remove('active');
         this.classList.remove('active');
     });
-
-
 
 
 }); // end ready
