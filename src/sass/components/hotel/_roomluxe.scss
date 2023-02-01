@@ -215,6 +215,7 @@
 
 // Фото номеру (ванна та чашка) - позиціонування кнопок
 .roomluxe__thumb {
+  overflow-x: hidden;
 
   @media screen and (min-width: 1024px) {
     position: relative;
