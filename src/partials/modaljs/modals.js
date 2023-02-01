@@ -4,10 +4,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /* Записываем в переменные массив элементов-кнопок и подложку.
        Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
+    body = document.body;
+    fixBlocks = document.querySelectorAll('.fix-block');
     var modalButtons = document.querySelectorAll('.js-open-modal'),
         overlay = document.querySelector('.js-overlay-modal'),
         closeButtons = document.querySelectorAll('.js-modal-close');
 
+    disableScroll = function () {
+        let paddingOffset = window.innerWidth - document.body.offsetWidth + 'px';
+        let pagePosition = window.scrollY;
+        fixBlocks.forEach((el) => {
+            el.style.paddingRight = paddingOffset;
+        });
+        body.style.paddingRight = paddingOffset;
+        body.classList.add('disable-scroll');
+        body.dataset.position = pagePosition;
+        body.style.top = -pagePosition + 'px';
+    }
+
+    enableScroll = function () {
+        let pagePosition = parseInt(document.body.dataset.position, 10);
+        body.style.top = 'auto';
+        body.classList.remove('disable-scroll');
+        fixBlocks.forEach((el) => {
+            el.style.paddingRight = '0px';
+        });
+        body.style.paddingRight = '0px';
+        window.scroll({ top: pagePosition, left: 0 });
+        body.removeAttribute('data-position');
+    }
 
     /* Перебираем массив кнопок */
     modalButtons.forEach(function (item) {
@@ -30,14 +55,9 @@ document.addEventListener('DOMContentLoaded', function () {
                подложке и окну чтобы показать их. */
             modalElem.classList.add('active');
             overlay.classList.add('active');
-            const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
-            const body = document.body;
-            body.style.overflow = 'hidden';
-            // body.style.top = `-${scrollY}`;
         }); // end click
 
     }); // end foreach
-
 
     closeButtons.forEach(function (item) {
 
@@ -46,11 +66,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             parentModal.classList.remove('active');
             overlay.classList.remove('active');
-            const body = document.body;
-            const scrollY = body.style.top;
-            body.style.overflow = '';
-            // body.style.top = '';
-            // window.scrollTo(0, parseInt(scrollY || '0') * -1);
         });
 
     }); // end foreach
@@ -70,9 +85,6 @@ document.addEventListener('DOMContentLoaded', function () {
     overlay.addEventListener('click', function () {
         document.querySelector('.modal.active').classList.remove('active');
         this.classList.remove('active');
-        const body = document.body;
-        const scrollY = body.style.top;
-        body.style.overflow = '';
     });
 
 
