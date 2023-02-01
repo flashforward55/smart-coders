@@ -158,6 +158,7 @@ td {
 .table-position {
     @media screen and (min-width:1024px) {
         display: flex;
+        
         column-gap: 88px;
     }
 
