@@ -1,7 +1,7 @@
 .container-modal__table {
   width: 100%;
   max-width: 310px;
-  padding: 60px 15px;
+  padding: 35px 15px;
   @media screen and (min-width: 414px) {
     max-width: 414px;
     height: 668px;
@@ -21,20 +21,28 @@
   align-items: center;
   border: none;
   background-color: transparent;
-  right: 16px;
-  top: 16px;
+  right: 10px;
+  top: 10px;
   padding: 0;
   margin: 0;
   cursor: pointer;
+  @media screen and (min-width: 414px) {
+    right: 16px;
+    top: 16px;
+  }
 }
 
 .icon {
   display: inline-block;
   stroke-width: 0;
   stroke: currentColor;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   @include transition(stroke);
+  @media screen and (min-width: 414px) {
+    width: 24px;
+    height: 24px;
+  }
 
   &:hover,
   &:focus {
@@ -46,7 +54,7 @@
 .modal-table__title {
   text-align: center;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 700;
@@ -57,6 +65,7 @@
   @media screen and (min-width: 414px) {
     font-size: 24px;
     line-height: 1.16;
+    margin-bottom: 40px;
   }
   @media screen and (min-width: 1024px) {
     font-size: 40px;
@@ -80,7 +89,7 @@
   &__input {
     width: 100%;
     max-width: 384px;
-    height: 54px;
+    height: 44px;
     padding-left: 12px;
     appearance: none;
     background-color: transparent;
@@ -97,6 +106,9 @@
     line-height: 1.15;
     letter-spacing: 0.05em;
     color: $modal-gray-text-color;
+    @media screen and (min-width: 414px) {
+      height: 54px;
+    }
     @media screen and (min-width: 1024px) {
       width: 288px;
       height: 64px;
@@ -144,7 +156,7 @@
   &__input {
     width: 100%;
     max-width: 384px;
-    height: 54px;
+    height: 44px;
     padding-left: 12px;
     appearance: none;
     background-color: transparent;
@@ -160,6 +172,9 @@
     line-height: 1.15;
     letter-spacing: 0.05em;
     color: $modal-gray-text-color;
+    @media screen and (min-width: 414px) {
+      height: 54px;
+    }
     @media screen and (min-width: 1024px) {
       width: 288px;
       height: 64px;
@@ -213,7 +228,7 @@
   &__select {
     width: 100%;
     max-width: 384px;
-    height: 54px;
+    height: 44px;
     padding-left: 12px;
     appearance: none;
     background-color: transparent;
@@ -230,6 +245,9 @@
     letter-spacing: 0.05em;
 
     color: $modal-gray-text-color;
+    @media screen and (min-width: 414px) {
+      height: 54px;
+    }
     @media screen and (min-width: 1024px) {
       width: 288px;
       height: 64px;
@@ -277,7 +295,7 @@
 .drop-people::before {
   content: '';
   position: absolute;
-  top: 27px;
+  top: 22px;
   right: 15px;
   width: 17px;
   height: 3px;
@@ -286,6 +304,9 @@
   z-index: 10;
   transform: rotate(-45deg);
   transition: 500ms;
+  @media screen and (min-width: 414px) {
+    top: 27px;
+  }
   @media screen and (min-width: 1024px) {
     top: 32px;
   }
@@ -293,7 +314,7 @@
 .drop-people::after {
   content: '';
   position: absolute;
-  top: 27px;
+  top: 22px;
   right: 25px;
   width: 17px;
   height: 3px;
@@ -302,6 +323,9 @@
   z-index: 10;
   transform: rotate(45deg);
   transition: 500ms;
+  @media screen and (min-width: 414px) {
+    top: 27px;
+  }
   @media screen and (min-width: 1024px) {
     top: 32px;
   }
@@ -317,7 +341,7 @@
 .drop-date::before {
   content: '';
   position: absolute;
-  top: 27px;
+  top: 22px;
   right: 15px;
   width: 17px;
   height: 3px;
@@ -326,6 +350,9 @@
   z-index: 10;
   transform: rotate(-45deg);
   transition: 500ms;
+  @media screen and (min-width: 414px) {
+    top: 27px;
+  }
   @media screen and (min-width: 1024px) {
     top: 32px;
   }
@@ -333,7 +360,7 @@
 .drop-date::after {
   content: '';
   position: absolute;
-  top: 27px;
+  top: 22px;
   right: 25px;
   width: 17px;
   height: 3px;
@@ -342,6 +369,9 @@
   z-index: 10;
   transform: rotate(45deg);
   transition: 500ms;
+  @media screen and (min-width: 414px) {
+    top: 27px;
+  }
   @media screen and (min-width: 1024px) {
     top: 32px;
   }
@@ -364,7 +394,7 @@
   &__input {
     width: 100%;
     max-width: 384px;
-    height: 54px;
+    height: 44px;
     padding-left: 12px;
     appearance: none;
     background-color: transparent;
@@ -381,6 +411,9 @@
     letter-spacing: 0.05em;
     color: $modal-gray-text-color;
 
+    @media screen and (min-width: 414px) {
+      height: 54px;
+    }
     @media screen and (min-width: 1024px) {
       width: 288px;
       height: 64px;

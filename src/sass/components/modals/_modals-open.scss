@@ -1,3 +1,24 @@
+// body[style*='overflow: hidden'] {
+//   @media screen and (min-width: 1024px) {
+//     margin-right: 16px;
+//   }
+// }
+// @media screen and (min-width: 960px) {
+//   html {
+//     margin-left: calc(100vw - 100%);
+//     margin-right: 0;
+//   }
+// }
+.disable-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 .overlay-modal {
   opacity: 0;
   visibility: hidden;
@@ -33,4 +54,12 @@
 }
 .modal.active {
   transform: translate(-50%, -50%) perspective(600px) rotateX(0deg) scale(1);
+}
+
+.btn-modal-submit__cursor {
+  cursor: pointer;
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+    max-width: 592px;
+  }
 }
