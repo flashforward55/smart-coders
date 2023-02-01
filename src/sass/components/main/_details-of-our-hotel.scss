@@ -4,6 +4,7 @@
     margin-right: auto;
     padding-top:24px;
     padding-bottom:40px;
+    overflow: hidden;
     text-align: center;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/main-page/details-of-our-hotel/homepage-details-hotel-bg-mobile-@1x.jpg');
     background-color: $bg-lemon-color;
@@ -46,6 +47,9 @@
     color:$white-color;
     text-transform: uppercase;
     text-align: center;
+    @media screen and (max-width: 413px){
+        font-size: 9.7vw;
+      }
     @media screen and (min-width:414px){
         margin-bottom: 12px;
         padding-right: 129px;
@@ -73,6 +77,9 @@
     letter-spacing: 0.02em;
     color:$white-color;
     text-align: center;
+    @media screen and (max-width: 413px){
+        font-size: 4.8vw;
+      }
     @media screen and (min-width:414px){
         margin-bottom: 20px;
         padding-right: 125px;
@@ -113,6 +120,9 @@
     letter-spacing: 0.02em;
     color: #BABABA;
     text-align: center;
+    @media screen and (max-width: 413px){
+        font-size: 2.9vw;
+    }
     @media screen and (min-width:414px){
         font-size: 12px;
         text-align: left;
@@ -135,12 +145,12 @@
         position: relative;}
 }
 .details-of-our-hotel__swiper{
-    overflow: hidden;
     @media screen and (min-width:1024px){
         margin-right: 266px;
     }
     @media screen and (min-width:1280px){
         margin-right: 270px;
+        transform: translateX(-36px);
     }
 }
 .details-of-our-hotel__list{
