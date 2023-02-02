@@ -1,3 +1,3 @@
-import './partials/modaljs/modals';
-import './partials/modaljs/mask-phone';
-import './partials/modaljs/price';
+import './js/modals';
+import './js/mask-phone';
+import './js/price';
