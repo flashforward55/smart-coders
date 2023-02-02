@@ -1,3 +1,3 @@
-import './js/modals';
-import './js/mask-phone';
-import './js/price';
+import './js/modal';
+import './js/mask-phones';
+import './js/prices';
