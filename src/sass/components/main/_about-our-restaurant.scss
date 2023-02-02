@@ -11,14 +11,12 @@
     width: 320px;
 
     @media screen and (min-width: 320px) {
-            width: 320px;
-        }
+        width: 320px;
+    }
 
     @media screen and (min-width: 414px) {
         width: 414px;
     }
-
-
 
     @media screen and (min-width: 1024px) {
         width: 1024px;
@@ -167,7 +165,6 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
 
-    
 
     @media screen and (min-width: 1024px) {
         font-size: 16px;
@@ -181,13 +178,13 @@
             margin-bottom: 28px;
         }
 
-                @media screen and (min-width: 1024px) {
-                    max-width: 439px;
-                }
-        
-                @media screen and (min-width: 1280px) {
-                    max-width: 518px;
-                }
+        @media screen and (min-width: 1024px) {
+            max-width: 439px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            max-width: 518px;
+        }
 
     }
 
@@ -197,8 +194,8 @@
         max-width: 100px;
 
         @media screen and (min-width: 414px) {
-                max-width: 163px;
-            }
+            max-width: 163px;
+        }
 
         @media screen and (min-width: 1024px) {
             max-width: 312px;
@@ -216,7 +213,7 @@
     margin-left: auto;
     margin-bottom: 20px;
 
-@media screen and (min-width: 414px) {
+    @media screen and (min-width: 414px) {
         width: 361px;
     }
 
@@ -230,6 +227,7 @@
         transform: translateY(-447px);
         width: 578px;
         margin-bottom: 36px;
+        height: 254px;
     }
 
 }
@@ -237,18 +235,18 @@
 .slider__line {
     display: flex;
     gap: 24px;
-    width: 1052px;
+    width: 1321px;
     position: relative;
     left: 0;
-    transition: all ease 1s;
+    transition: all ease 2s;
 
     @media screen and (min-width: 1024px) {
         gap: 40px;
-        width: 896px;
+        width: 1130px;
     }
 
     @media screen and (min-width: 1280px) {
-        width: 1136px;
+        width: 1430px;
     }
 }
 
@@ -261,6 +259,14 @@
     @media screen and (max-width: 1023px) {
         width: 245px;
     }
+        @media screen and (min-width: 1024px) {
+            width: 194px;
+        }
+    
+        @media screen and (min-width: 1280px) {
+            width: 254px;
+        }
+
 }
 
 .slider__button-control {
