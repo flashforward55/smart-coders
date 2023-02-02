@@ -133,7 +133,7 @@
   <script>
     const rw = document.querySelector('.details-of-our-hotel__list').children;
     const lst_length = rw.length;
-    document.querySelector('.details-of-our-hotel__right').addEventListener('click', muv);
+    document.querySelector('.details-of-our-hotel__left').addEventListener('click', muv);
     function muv() {
       for (let i = 0; i < lst_length; i++) {
         if (rw[i].classList == 'details-of-our-hotel__item') {
@@ -147,7 +147,7 @@
         }
       }
     }
-    document.querySelector('.details-of-our-hotel__left').onclick = function () {
+    document.querySelector('.details-of-our-hotel__right').onclick = function () {
       for (let i = 0; i < lst_length; i++) {
         if (rw[i].classList == 'details-of-our-hotel__item') {
           if (i == 0) {
