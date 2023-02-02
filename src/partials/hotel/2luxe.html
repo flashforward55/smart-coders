@@ -270,7 +270,13 @@
     document.querySelector('.roomluxe-slides__right').onclick = function () {
       for (let i = 0; i < list_length; i++) {
         if (rew[i].classList == 'roomluxe-slides__slide') {
-          if (i == 0) break;
+          //if (i == 0) break;
+          if (i == 0) {
+            for (let i = 0; i < list_length - 1; i++) {
+              rew[i].classList = 'visually-hidden';
+            }
+            break;
+          }
           rew[i - 1].classList = 'roomluxe-slides__slide';
           break;
         }
