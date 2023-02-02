@@ -237,18 +237,18 @@
 .slider__line {
     display: flex;
     gap: 24px;
-    width: 1052px;
+    width: 1321px;
     position: relative;
     left: 0;
-    transition: all ease 1s;
+    transition: all ease 2s;
 
     @media screen and (min-width: 1024px) {
         gap: 40px;
-        width: 896px;
+        width: 1130px;
     }
 
     @media screen and (min-width: 1280px) {
-        width: 1136px;
+        width: 1430px;
     }
 }
 
