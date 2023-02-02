@@ -105,7 +105,6 @@
               />
             </picture>
           </li>
-          
         </ul>
 
         <div class="details-rest__btn-arrow">
@@ -119,7 +118,11 @@
             </svg>
           </button>
 
-          <button class="details-rest__arrow details-rest__arrow--right" type="button" aria-label="Кнопка вправо">
+          <button
+            class="details-rest__arrow details-rest__arrow--right"
+            type="button"
+            aria-label="Кнопка вправо"
+          >
             <svg class="details-rest__icon-arrow" width="32" height="32">
               <use href="./images/icons.svg#clic-arrow-right"></use>
             </svg>
@@ -168,7 +171,13 @@
     document.querySelector('.details-rest__arrow--right').onclick = function () {
       for (let i = 0; i < list_length; i++) {
         if (rew[i].classList == 'details-rest__item-thumb') {
-          if (i == 0) break;
+          //if (i == 0) break;
+          if (i == 0) {
+            for (let i = 0; i < list_length - 1; i++) {
+              rew[i].classList = 'visually-hidden';
+            }
+            break;
+          }
           rew[i - 1].classList = 'details-rest__item-thumb';
           break;
         }
