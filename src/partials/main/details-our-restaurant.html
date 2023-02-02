@@ -105,7 +105,96 @@
               />
             </picture>
           </li>
-          
+          <li class="details-rest__item-thumb">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/main-page/details-rest/homepage-details-rest-slide1-desktop-@1x.jpg 1x,
+                  ./images/main-page/details-rest/homepage-details-rest-slide1-desktop-@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./images/main-page/details-rest/homepage-details-rest-slide1-tablet-@1x.jpg 1x,
+                  ./images/main-page/details-rest/homepage-details-rest-slide1-tablet-@2x.jpg 2x
+                "
+              />
+              <source
+                media="(max-width: 414px)"
+                srcset="
+                  ./images/main-page/details-rest/homepage-details-rest-slide1-mobile-@1x.jpg 1x,
+                  ./images/main-page/details-rest/homepage-details-rest-slide1-mobile-@2x.jpg 2x
+                "
+              />
+              <img
+                src="./images/main-page/details-rest/homepage-details-rest-slide1-mobile-@1x.jpg"
+                class="details-rest__slide"
+                alt="Фото страви 1 ресторану"
+              />
+            </picture>
+          </li>
+          <li class="details-rest__item-thumb">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/main-page/details-rest/homepage-details-rest-slide2-desktop-@1x.jpg 1x,
+                  ./images/main-page/details-rest/homepage-details-rest-slide2-desktop-@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./images/main-page/details-rest/homepage-details-rest-slide2-tablet-@1x.jpg 1x,
+                  ./images/main-page/details-rest/homepage-details-rest-slide2-tablet-@2x.jpg 2x
+                "
+              />
+              <source
+                media="(max-width: 414px)"
+                srcset="
+                  ./images/main-page/details-rest/homepage-details-rest-slide2-tablet-@1x.jpg 1x,
+                  ./images/main-page/details-rest/homepage-details-rest-slide2-tablet-@2x.jpg 2x
+                "
+              />
+              <img
+                src="./images/main-page/details-rest/homepage-details-rest-slide2-tablet-@1x.jpg"
+                class="details-rest__slide"
+                alt="Фото страви 2 ресторану"
+              />
+            </picture>
+          </li>
+          <li class="details-rest__item-thumb">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/main-page/details-rest/homepage-details-rest-slide3-desktop-@1x.jpg 1x,
+                  ./images/main-page/details-rest/homepage-details-rest-slide3-desktop-@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./images/main-page/details-rest/homepage-details-rest-slide3-tablet-@1x.jpg 1x,
+                  ./images/main-page/details-rest/homepage-details-rest-slide3-tablet-@2x.jpg 2x
+                "
+              />
+              <source
+                media="(max-width: 414px)"
+                srcset="
+                  ./images/main-page/details-rest/homepage-details-rest-slide3-tablet-@1x.jpg 1x,
+                  ./images/main-page/details-rest/homepage-details-rest-slide3-tablet-@2x.jpg 2x
+                "
+              />
+              <img
+                src="./images/main-page/details-rest/homepage-details-rest-slide3-tablet-@1x.jpg"
+                class="details-rest__slide"
+                alt="Фото страви 3 ресторану"
+              />
+            </picture>
+          </li>
         </ul>
 
         <div class="details-rest__btn-arrow">
@@ -119,7 +208,11 @@
             </svg>
           </button>
 
-          <button class="details-rest__arrow details-rest__arrow--right" type="button" aria-label="Кнопка вправо">
+          <button
+            class="details-rest__arrow details-rest__arrow--right"
+            type="button"
+            aria-label="Кнопка вправо"
+          >
             <svg class="details-rest__icon-arrow" width="32" height="32">
               <use href="./images/icons.svg#clic-arrow-right"></use>
             </svg>
@@ -168,7 +261,13 @@
     document.querySelector('.details-rest__arrow--right').onclick = function () {
       for (let i = 0; i < list_length; i++) {
         if (rew[i].classList == 'details-rest__item-thumb') {
-          if (i == 0) break;
+          //if (i == 0) break;
+          if (i == 0) {
+            for (let i = 0; i < list_length - 1; i++) {
+              rew[i].classList = 'visually-hidden';
+            }
+            break;
+          }
           rew[i - 1].classList = 'details-rest__item-thumb';
           break;
         }

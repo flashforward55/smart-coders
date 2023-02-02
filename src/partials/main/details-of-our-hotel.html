@@ -1,13 +1,13 @@
 <section class="details-of-our-hotel">
   <div class="container">
-      <p class="logo details-of-our-hotel__logo">MIMIHO</p>
-      <h2 class="details-of-our-hotel__title">Готель</h2>
-      <div class="details-of-our-hotel__text-box">
-        <p class="details-of-our-hotel__text">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-          consequat duis enim velit mollit.
-        </p>
-      </div>
+    <p class="logo details-of-our-hotel__logo">MIMIHO</p>
+    <h2 class="details-of-our-hotel__title">Готель</h2>
+    <div class="details-of-our-hotel__text-box">
+      <p class="details-of-our-hotel__text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+        consequat duis enim velit mollit.
+      </p>
+    </div>
     <div class="details-of-our-hotel__thumb">
       <div class="details-of-our-hotel__swiper">
         <ul class="details-of-our-hotel__list list">
@@ -59,8 +59,8 @@
               />
               <source
                 srcset="
-                ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper2-tablet-1x.jpg 1x,
-                ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper2-tablet-2x.jpg 2x
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper2-tablet-1x.jpg 1x,
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper2-tablet-2x.jpg 2x
                 "
                 media="(max-width:1023px)"
               />
@@ -89,8 +89,8 @@
               />
               <source
                 srcset="
-                ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper3-tablet-1x.jpg 1x,
-                ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper3-tablet-2x.jpg 2x
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper3-tablet-1x.jpg 1x,
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper3-tablet-2x.jpg 2x
                 "
                 media="(max-width:1023px)"
               />
@@ -133,7 +133,7 @@
   <script>
     const rw = document.querySelector('.details-of-our-hotel__list').children;
     const lst_length = rw.length;
-    document.querySelector('.details-of-our-hotel__right').addEventListener('click', muv);
+    document.querySelector('.details-of-our-hotel__left').addEventListener('click', muv);
     function muv() {
       for (let i = 0; i < lst_length; i++) {
         if (rw[i].classList == 'details-of-our-hotel__item') {
@@ -147,10 +147,15 @@
         }
       }
     }
-    document.querySelector('.details-of-our-hotel__left').onclick = function () {
+    document.querySelector('.details-of-our-hotel__right').onclick = function () {
       for (let i = 0; i < lst_length; i++) {
         if (rw[i].classList == 'details-of-our-hotel__item') {
-          if (i == 0) break;
+          if (i == 0) {
+            for (let i = 0; i < lst_length - 1; i++) {
+              rw[i].classList = 'visually-hidden';
+            }
+            break;
+          }
           rw[i - 1].classList = 'details-of-our-hotel__item';
           break;
         }
