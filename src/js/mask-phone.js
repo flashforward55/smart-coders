@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
         });
     }
+
     var phone_inputs = document.querySelectorAll('[data-phone-pattern]');
     for (let elem of phone_inputs) {
         for (let ev of ['input', 'blur', 'focus']) {
