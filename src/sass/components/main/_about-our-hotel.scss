@@ -214,10 +214,10 @@
 // Slider
 .slider-container {
   margin-top: 32px;
-  width: 530px;
+  width: 330px;
   height: 245px;
   overflow-x: clip;
-  transform: translateX(-35%);
+  
 
   @media screen and (min-width: 1024px) {
     position: absolute;
@@ -244,10 +244,12 @@
   position: relative;
   left: 0;
   transition: all ease 2s;
+  transform: translateX(-35%);
 
   @media screen and (min-width: 1024px) {
     height: 194px;
     gap: 40px;
+    transform: none;
   }
 
   @media screen and (min-width: 1280px) {
