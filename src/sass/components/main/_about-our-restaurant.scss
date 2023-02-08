@@ -3,24 +3,10 @@
 }
 
 .restaurant-description__container {
-    padding-right: 15px;
-    padding-left: 15px;
     padding-top: 16px;
     padding-bottom: 20px;
-    margin: 0 auto;
-    width: 320px;
-
-    @media screen and (min-width: 320px) {
-        width: 320px;
-    }
-
-    @media screen and (min-width: 414px) {
-        width: 414px;
-    }
 
     @media screen and (min-width: 1024px) {
-        width: 1024px;
-        padding-right: 47px;
         padding-left: 60px;
         padding-top: 120px;
         padding-bottom: 32px;
@@ -28,9 +14,6 @@
     }
 
     @media screen and (min-width: 1280px) {
-        width: 1280px;
-        padding-right: 85px;
-        padding-left: 85px;
         padding-bottom: 50px;
         margin-bottom: -447px;
     }
@@ -128,13 +111,16 @@
 
     &--wood {
         width: 244px;
+        height: 322px;
 
         @media screen and (min-width: 1024px) {
             width: 400px;
+            height: 524px;
         }
 
         @media screen and (min-width: 1280px) {
             width: 460px;
+            height: 574px;
         }
 
         @media screen and (min-width: 1024px) {
@@ -147,14 +133,16 @@
     }
 
     &--chess {
-        width: 200px;
+
 
         @media screen and (min-width: 1024px) {
             width: 350px;
+            height: 500px;
         }
 
         @media screen and (min-width: 1280px) {
             width: 460px;
+            height: 574px;
         }
     }
 }
@@ -164,7 +152,6 @@
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-
 
     @media screen and (min-width: 1024px) {
         font-size: 16px;
@@ -190,12 +177,7 @@
 
     &--color {
         color: $brown-color;
-
-        max-width: 100px;
-
-        @media screen and (min-width: 414px) {
-            max-width: 163px;
-        }
+        max-width: 163px;
 
         @media screen and (min-width: 1024px) {
             max-width: 312px;
@@ -258,14 +240,18 @@
 
     @media screen and (max-width: 1023px) {
         width: 245px;
+        height: 245;
     }
-        @media screen and (min-width: 1024px) {
-            width: 194px;
-        }
-    
-        @media screen and (min-width: 1280px) {
-            width: 254px;
-        }
+
+    @media screen and (min-width: 1024px) {
+        width: 194px;
+        height: 194px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 254px;
+        height: 254px;
+    }
 
 }
 
