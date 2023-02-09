@@ -33,9 +33,13 @@
 
     box-shadow: 0px 30px 135px 17px #0000004d;
   }
+  &__iframe {
+    height: 100%;
+    width: 100%;
+  }
 
   @media screen and(max-width:1023px) {
-    &__iframe {
+    &__map {
       height: 220px;
     }
   }
@@ -187,8 +191,7 @@
 
     &__map {
       width: 535px;
-
-
+      height: 412px;
     }
   }
 
@@ -232,6 +235,7 @@
 
   .contacts__map {
     min-width: 634px;
+    height: 412px;
   }
 
   .address__tel,
